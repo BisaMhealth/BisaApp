@@ -1,0 +1,2 @@
+[Tue Mar 26 03:39:17.313648 2019] [php7:error] [pid 12714] [client 95.216.98.40:59685] script '/var/www/html/bisa.fr/public_html/xmlrpc.php' not found or unable to stat
+[Thu Apr 25 11:15:51.309156 2019] [php7:error] [pid 16479] [client 154.160.30.19:28374] script '/var/www/html/bisa.fr/public_html/SlydePay/Slyde_Pay.php' not found or unable to stat

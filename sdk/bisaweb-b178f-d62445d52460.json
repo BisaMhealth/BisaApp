@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bisaweb-b178f",
+  "private_key_id": "d62445d524605e32fa8e158fea27b4d82307c9fc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCzN/MBCb4IpZJi\nvnULU4mKOd4gjkXwt3TwzKk72dT9bOyKj//uGbhwIdo9kj5dHHFmqL9v4geCjzxh\ncfeA3dpC5Lxqd68bko0bYOiZ+rN1iJ0bAtpGc82kODoyoOWyr8wl1PrGKM9suj9t\ndWSdHgWy4hL6YdUrkDNm7JSdvqs2peLLXFrxb4I09od8xOxoP2MsqHSweoOPO7hU\nPwC+iWCa0JH9W4xR+Wg0QLQuR29hOO/N4smYTAkk41qiK62Z/cxV5BS4wE4li+mP\nkaXGEUStpH2puaJ3N91kVh/RLrnr95/TlYX8xzQ2gk4WYHjoaHKcG0VySyFJ5KTm\n8lDcmrcbAgMBAAECggEAEFUed69AGsCgDRCnUP9tbuPkKtpcZFoLtbApEhPBddD5\n44zI+ZVtegaTwX204j5n1T+2pocWQR81lPnSYPOW4va+dwNuOViLNH4J5JJ0zVbE\nXoRNiRMfoAIhx6BjHnwn4iC9M9bfRFzaz+pdX3YvdcRlj1zgFObA0HXp+1A3gTTI\noXUoDOgVEbD7TaN5x3+vtWy/SH6R6BhZuTaG9lPZQHgd4geqrUJeMsDGzwLLaSDR\nCAbyr6FWDERWW4geuSRhIUpg7d57QMhyYkysW9PJ8KuoD9CZsxyUIvOu8fyqUCMK\nFyr7zwtUOYFRpRQahwPAf/oy7TwJkIZ8IV/1E/Kc6QKBgQDwDQvO4Tfrrk+IZ3ze\n0qqNdrOgip6mhqzsH9rikQtLUcf2SjzaFtl6khMDxzBfuCI1+ymEu7mcQq9C/jSq\n5axZBPZ7JWvC+K0qOFNsJ8lz37Y7hXs+SzqNRUDlPVUKgpF+2HaV+dBK93dW1+Rw\nwpsPEZeN9W/OWxPU9pkWqDozowKBgQC/IDkfQKsP8gswb1Mt9+6qwdTSjTVHtnFF\n03eBhOuCYTbMr5peb800ScY8fQ2SArSw6hBFoToeoe9mG2dofjhzGDLLAevCb5lz\nuD1nZWUUZrvMa1ND2A00XcGr6/jgbyYf24yKH+8etCSc6hkI74ESBuqMq5m7BfWq\n+bXbSczmKQKBgGselz9ZVzfvkAQhkiJoxbzc1Gl2kjdjb7TqviVObkjNFLs+A4ua\nmK/OkXelIlwEche+nZdiogAt7cGqaFw+ozsSMN9hIoZdrABkJC3mT0pK8Sn8dbOl\npFo4Ji5lwRYwj7aX58sjMCTT60gwjPsYjFMcGZI6jQr7r4zgAg6PQXGbAoGBALWq\nVkFLgY1tfo8yMbkO4c9y3+ymBc+9LVu2jfARPJ2385OJEkzTLhSWTxPttXlkkwVZ\n5c+ZWRoGx/ug7qCW4OcdSCJIGCS/WPdyVwMxkGtc3wKFvSZOdPaia1UTvYLugyli\n0On1Qp9HkUmJBfTFWkSdSFIfRcdL+d/i7KWcN2NJAoGAebkkQE26EeABqFHD+i7g\nzylTkGSiaC7VL+vdOxLd7o4oZIfzXdCrmkTPqaT9SKnQtabQ0slWVsjbfORL4uCl\nusCljK7XfISppyAQ4XAt8daYlbEtfF8y8DErJdvi3s2lx1mgZJdMc2A2rXFRGPuR\nvUs5q5J7qUWmCmerfOkfQNQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "bisaweb-b178f@appspot.gserviceaccount.com",
+  "client_id": "117100841463835046121",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bisaweb-b178f%40appspot.gserviceaccount.com"
+}

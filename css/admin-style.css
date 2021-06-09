@@ -1,0 +1,550 @@
+body {
+    background: #ffffff;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.site-footer {
+    background: #ffffff;
+}
+
+.admin-header {
+    border: none !important;
+    outline: none;
+    background-color: rgba(8, 11, 0, 0.7) !important;
+}
+
+.admin-header div.navbar-header {
+    background-color: transparent !important;
+}
+
+.admin-header a {
+    color: #fff !important;
+}
+
+.admin-header > .top-right .dropdown-menu a {
+    color: #111 !important;
+}
+
+.navbar-nav * {
+    font-weight: bolder;
+}
+
+.auth-main-div {
+    margin-top: 5vh;
+}
+
+.intro-img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forgot-password-img-div, .reset-password-img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forgot-password-img {
+    height: 150px;
+    width: 150px;
+}
+
+.auth-login-sub-div {
+    /* box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    background: #fff;
+    padding: 10px 20px;
+    border-top: 5px solid #a3cc39; */
+    padding-top: 15vh;
+}
+
+.auth-sub-div {
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    background: #fff;
+    padding: 10px 20px;
+    border-top: 5px solid #a3cc39;
+}
+
+.auth-form-div {
+    padding-top: 20px;
+}
+
+.auth-drawable-img {
+    height: 250px;
+    width: inherit;
+}
+
+.auth-logo-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-logo {
+    height: 100px;
+    width: 100px;
+    display: none;
+}
+
+.intro-logo,.admin-auth-logo {
+    height: 100px;
+    width: 135px;
+}
+
+
+.login-signup-div {
+    margin-top: 10vh;
+}
+
+.login-signup-form-img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.login-signup-form-img-div img {
+    height: 80px;
+    width: 70px;
+};
+
+.page-animation {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-iteration-count: initial;
+}
+
+.intro-form-animation {
+    animation-name: zoomIn;
+    animation-duration: 1.5s;
+    animation-iteration-count: initial;
+}
+
+.text-maroon {
+    color: #801515 !important;
+}
+
+.text-violet {
+    color: #510E53 !important;
+}
+
+
+.text-blue {
+    color: #1C1A59 !important;
+}
+
+.text-orange{
+    color: #AD6021 !important;
+}
+
+.text-pink {
+    color: #FF69B4 !important;
+}
+
+.text-custom {
+    color: #a3cc39;
+}
+
+.btn {
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.btn-custom {
+    background: #a3cc39;
+    border: 1px solid #a3cc39;
+    color: #fff;
+}
+
+.btn-custom-outline {
+    background: #fff;
+    border: 1px solid #a3cc39;
+    color: #fff;
+}
+
+.btn-custom:hover {
+    background: #8ab127;
+    color: #fff;
+}
+
+.btn-custom-outline:hover {
+    background: #8ab127;
+    color: #fff;
+}
+
+.navbar .navbar-nav>.active>a,
+.navbar .navbar-nav>.active>a i.fa,
+.navbar .navbar-nav>.active>a:focus,
+.navbar .navbar-nav>.active>a:hover {
+    color: #a3cc39;
+    margin-left: -5px;
+}
+
+
+.navbar .navbar-nav>li.active {
+    border-left: 5px solid #a3cc39;
+    background: #f7f7f7;
+}
+
+.navbar .navbar-nav>li>a.active,
+.navbar .navbar-nav>li>a.active:hover,
+.navbar .navbar-nav>li>a.active>i.fa,
+.navbar .navbar-nav>li>ul>li.active,
+.navbar .navbar-nav>li>ul>li.active:hover,
+.navbar .navbar-nav>li>ul>li.active>a,
+.navbar .navbar-nav>li>ul>li.active>i.fa,
+.navbar .navbar-nav>li>ul>li.active>a:hover {
+    color: #a3cc39;
+    font-size: 13px !important;
+}
+
+.navbar .navbar-nav>li a {
+    font-size: 13px;
+}
+
+.active-list {
+    border-left: 5px solid #a3cc39;
+    background: #f7f7f7;
+}
+
+.video-div {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+    padding: 5px;
+}
+
+.video-stats-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.view-video-stats-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.video-action-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #d4d4d4;
+    padding: 5px 0;
+}
+
+.video-action-div a {
+    cursor: pointer;
+}
+
+.video-item {
+    width: 100%;
+    height: 240px;
+}
+
+.dashboard-stat-card {
+    box-shadow: 1px 3px 5px rgba(242, 241, 239, 0.5);
+    border: 1px solid #f7f7f7;
+}
+
+.list-group > .list-group-item.active {
+    background: transparent;
+    font-weight: bold;
+    border: inherit;
+    color: #a3cc39;
+}
+
+.nav-logo {
+    height: 40px !important;
+    width: 40px !important;
+}
+
+.modal .modal-header, .modal .modal-footer, .modal .modal-body {
+    border: none;
+}
+
+.bg-off-white {
+    background-color: #fbfbfb;
+}
+
+.btn-float {
+    height: 50px;
+    width: 50px;
+    font-size: 2.5rem;
+    line-height: 0.8;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    margin: 20px 20px 35px 20px;
+    position: fixed;
+    text-align: center;
+    background: #a3cc39;
+    border: 1px solid #a3cc39;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.user-area .dropdown-toggle::before {
+    content: "";
+    display: none;
+}
+
+.dashboard-stat-card {
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.action-btn {
+    cursor: pointer;
+}
+
+table tr td, table tr th {
+    font-size: 13px;
+}
+
+table.question-table tr td, table.question-table tr th {
+    font-size: 16px !important;
+}
+
+.article-content {
+    max-height: 33vh;
+    overflow-y: auto;
+    font-size: 13px;
+}
+
+.article-thumbnail, .edit-article-thumbnail, .add-health-resource-thumbnail, .edit-health-resource-thumbnail, .add-doctor-thumbnail, .edit-doctor-thumbnail, .add-question-thumbnail, .reply-question-thumbnail, .add-pharmacy-thumbnail, .edit-pharmacy-thumbnail, .add-video-thumbnail, .update-doctor-thumbnail {
+    display: none;
+}
+
+.article-thumbnail-res, .article-detail-img, .edit-article-thumbnail-res, .add-health-resource-res, .edit-health-resource-res, .add-doctor-thumbnail-res, .edit-doctor-thumbnail-res, .add-question-thumbnail-res, .reply-question-thumbnail-res, .add-pharmacy-thumbnail-res, .edit-pharmacy-thumbnail-res, .update-doctor-thumbnail {
+    height: auto;
+    max-height: 240px;
+    width: inherit;
+}
+
+.article-thumbnail-sm {
+    height: 30px;
+    width: 30px;
+}
+
+.articles-res {
+    margin-bottom: 70px;
+}
+
+.user-article-detail-img {
+    height: 60vh;
+    width: inherit;
+}
+
+.doctor-nav-thumbnail {
+    height: 25px;
+    width: 25px;
+}
+
+.doctor-details-thumbnail {
+    width: inherit;
+    height: 55vh;
+}
+
+.user-doctor-details-div {
+    background: #fff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.user-health-resource-div {
+    background: #fff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.user-health-info-div {
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.user-health-info-content-div {
+    padding: 5px;
+    padding-bottom: 0;
+    max-height: 20vh;
+    overflow: hidden;
+}
+
+.user-doctor-detail-img {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.health-resource-thumbnail {
+    height: 100%;
+    width: 100%
+}
+
+.user-health-resource-img, .user-health-info-img {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.doctor-close-question-div {
+    cursor: pointer;
+    display: none;
+}
+
+.settings-div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.stats-div {
+    background: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+}
+
+.stats-div:hover {
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
+}
+
+.stats-div-sm {
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.stats-div-sm:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.stats-div-sm h3 {
+    color: #444;
+}
+
+.user-signup-stats-div {
+    background: rgba(133, 173, 28, 0.5);
+}
+
+.questions-stats-div {
+    background: rgba(15, 140, 207,0.4);
+}
+
+.misc-stats-div {
+    background: rgba(255, 199, 6,0.4);
+}
+
+@-webkit-keyframes pulse-animation {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+}
+
+@keyframes pulse-animation {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+}
+
+.pulse {
+    overflow: visible;
+}
+
+.pulse::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: inherit;
+    border-radius: inherit;
+    -webkit-transition: opacity .3s, -webkit-transform .3s;
+    transition: opacity .3s, -webkit-transform .3s;
+    transition: opacity .3s, transform .3s;
+    transition: opacity .3s, transform .3s, -webkit-transform .3s;
+    -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+    animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+    z-index: -1;
+}
+
+/* Make filled out selects be the same size as empty selects */
+.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+  display: inline !important;
+}
+
+
+/*for pre loader*/
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.pre-loader {
+    position: fixed;
+    left: 0px;
+    top: 5px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../images/logo.gif') center no-repeat #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .top-left {
+        border: none !important;
+        outline: none;
+        background-color: rgba(8, 11, 0, 0.7) !important;
+    }
+
+    .top-right{
+        display: none;
+    }
+}

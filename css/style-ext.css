@@ -1,0 +1,208 @@
+body {
+    background: #f7f7f7;
+}
+.index-div {
+    margin-top: 12vh;
+}
+
+.navbar-custom {
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
+    background: #fff;
+}
+
+.navbar-logo {
+    height: 40px;
+    width: 40px;
+}
+
+.navbar-profile-img {
+    height: 30px;
+    width: 30px;
+}
+
+.index-auth-card{
+    background: #fff;
+    border-radius: 5px;
+    padding: 30px 60px ;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.index-auth-login-btn-div {
+    border-right: 1px solid #5a6268;
+}
+
+.index-auth-image-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-auth-image {
+    height: 80px;
+    width: 70px;
+}
+
+.btn-custom {
+    background: #fd004f;
+    border: 1px solid #fd004f;
+    color: #fff;
+}
+
+.btn-custom-outline {
+    background: #fff;
+    border: 1px solid #fd004f;
+    color: #fd004f;
+}
+
+.btn-custom-outline:hover {
+    background: #fd004f;
+    color: #fff;
+}
+
+.text-custom {
+    color: #fd004f;
+}
+
+.user-login-signup-div {
+    padding: 20px;
+    background: #fff;
+    margin-top: 10vh;
+    border: 1px solid #f7f7f7;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
+}
+
+.login-signup-div {
+    margin-top: 10vh;
+}
+
+.login-signup-form-img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.admin-auth-logo {
+    height: 100px;
+    width: 100px;
+}
+
+.login-signup-form-img-div img {
+    height: 150px;
+    width: 150px;
+}
+
+.doctor-auth-image {
+    height: 70px;
+    width: 80px;
+}
+
+.navbar-logo {
+    height: 40px;
+    width: 40px;
+}
+
+.navbar-custom-alt {
+    height: 50px;
+}
+
+.navbar-custom-alt .navbar-nav li a {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar-custom-alt .navbar-nav li a:hover {
+    color: #fd004f !important;
+}
+
+.text-custom {
+    color: #fd004f;
+}
+
+.btn-custom {
+    background: #fff;
+    border: 1px solid #fd004f;
+    color: #fd004f;
+}
+
+.modal .modal-header, .modal .modal-footer, .modal .modal-body  {
+	border: none;
+}
+
+
+.user-home-div {
+    margin-top: 15vh;
+}
+
+.btn-float{
+    height: 60px;
+    width: 60px;
+    font-size: 3rem;
+    line-height: 0.8;
+    bottom: 0;
+    right: 0;
+    margin: 20px 20px 35px 20px;
+    position: fixed;
+    text-align: center;
+    background: #fd004f;
+    border: 1px solid #fd004f;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.footer-div{
+    background: #111;
+    padding: 5px;
+}
+
+.footer-div-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: -10px;
+}
+
+.footer-icons-div a {
+    color: #fff;
+    margin-right: 7px;
+    font-size: 16px;
+}
+
+.footer-icons-div a:hover {
+    color: #fd004f;
+}
+
+.settings-sub-div {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.doctor-profile-img {
+    height: 100px;
+    width: 100px;
+}
+
+.doctor-profile-settings-img {
+    visibility: hidden;
+}
+
+.doctor-profile-settings-img-label {
+    font-size: 13px;
+    display: block;
+    width: 100px;
+    background: #fd004f;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.add-doctor-residence-btn {
+    cursor: pointer;
+}
