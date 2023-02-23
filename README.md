@@ -14,6 +14,13 @@ Bisa Health is a mobile and web application built to improve access to healthcar
 
 ### Mobile App
 
+##This repository contains the following branches
+
+-Backend(Containing all APIs for both web and mobile), 
+-Admin(Which has project files for the Administrator dashboard), 
+-Frontend(Which represents the BisaApp web version) and 
+-mobile(which contains the mobile app)
+
 To run the Bisa Health mobile app, follow these steps:
 
 1. Clone the repository to your local machine
