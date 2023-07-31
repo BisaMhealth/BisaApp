@@ -57,15 +57,6 @@ return [
     'asset_url' => env('ASSET_URL', null),
 
     /*
-    *Twilio Configuration
-    */
-    'twilio' => [
-        'TWILIO_AUTH_TOKEN'  => env('TWILIO_AUTH_TOKEN'),
-        'TWILIO_ACCOUNT_SID' => env('TWILIO_ACCOUNT_SID'),
-        'TWILIO_PHONE_NUMBER' => env('TWILIO_PHONE_NUMBER'),
-    ],
-
-    /*
     |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------
@@ -183,8 +174,6 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        JD\Cloudder\CloudderServiceProvider::class,
-        App\Providers\FirebaseServiceProvider::class,
     ],
 
     /*
@@ -233,7 +222,6 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'Cloudder' => JD\Cloudder\Facades\Cloudder::class,
         'Carbon' => 'Carbon\Carbon',
     ],
 
