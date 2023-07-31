@@ -13,12 +13,9 @@
         "firebase/php-jwt": "^5.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^6.2.1",
-        "jrm2k6/cloudder": "^0.6.0",
-        "kreait/firebase-php": "^4.32",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
-        "pusher/pusher-php-server": "^4.1",
-        "twilio/sdk": "^5.28"
+        "pusher/pusher-php-server": "^4.1"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
@@ -31,7 +28,8 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "platform-check": false
     },
     "extra": {
         "laravel": {
