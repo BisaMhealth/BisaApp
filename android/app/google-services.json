@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1008119938691",
+    "project_id": "bisaapp-afb9b",
+    "storage_bucket": "bisaapp-afb9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008119938691:android:23b8d4ee4d36ff35c725b6",
+        "android_client_info": {
+          "package_name": "gh.com.bisa.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008119938691-kcl7upe0o86rnauj2q4jv0979dc3dbio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9WLeFvghjvb_B9P-GZqakClNRMprx5Zo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1008119938691-kcl7upe0o86rnauj2q4jv0979dc3dbio.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

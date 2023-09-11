@@ -1,0 +1,92 @@
+[
+   {
+     "faq_id": 1,
+     "faq_cat_id": 1,
+     "question": "Question: Will a person with Type 2 diabetes under control end up with the need for insulin?",
+     "answer": "As you may have read, Type 2 diabetes is a progressive disease. Will you require insulin? That all depends on individual factors that includes, among many other factors, weight, exercise, genetics, hormones and beta-cells, those cells that produce insulin in your pancreas. Research shows that managing your diabetes early in the disease process can have big payoffs in later years. Joining a support group for people with diabetes can be helpful in keeping you going in your health quest. Following up with your health care team regularly and keeping abreast on the new developments in diabetes management can also benefit you",
+     "created_by": "1",
+     "created_at": "2020-04-27 10:46:14",
+     "updated_at": null
+   },
+   {
+     "faq_id": 2,
+     "faq_cat_id": 1,
+     "question": "Is there a genetic factor to strokes?",
+     "answer": "Yes. There are genetic factors. There are some people that are born with certain genes that predispose them to stroke. One such condition would be CADASIL (cerebral autosomal-dominant arteriopathy with subcortical infarcts and leukoencephalopathy). If you are interested, I am sure you can learn more about this condition from the Web. Some people are born with genetic conditions that predispose them to clotting. This in turn may increase their stroke risk. Finally, if you have a strong family history of high blood pressure, diabetes, high cholesterol or any of the major modifiable risk factors for stroke, you may also be at higher risk because of this. However, these particular conditions are very much treatable and you certainly can do something about them to lower your risk.\n",
+     "created_by": "1",
+     "created_at": "2020-04-27 10:46:45",
+     "updated_at": null
+   },
+   {
+     "faq_id": 3,
+     "faq_cat_id": 1,
+     "question": "Question: What medications are best for the treatment of asthma? What are their side effects?",
+     "answer": "Albuterol is usually the primary \"rescue\" or short-term medicine that is used to help acute asthma symptoms, such as coughing or wheezing. When a patient needs to use albuterol to relieve daytime symptoms more than twice per week, however, it usually reflects the need to use daily \"controller\" or anti-inflammatory medications. Many people are concerned about possible side effects of inhaled steroids, which are the largest group of \"controller\" medications available. When used in low- to medium-doses, however, inhaled steroids are very safe, even used on a daily basis for years. They are much safer than either multiple courses of oral steroids OR uncontrolled/undertreated asthma symptoms.",
+     "created_by": "1",
+     "created_at": "2020-04-27 10:46:45",
+     "updated_at": "2020-04-27 12:43:15"
+   },
+   {
+     "faq_id": 4,
+     "faq_cat_id": 1,
+     "question": "Question: Is breast cancer inherited?",
+     "answer": "Most women who get breast cancer do not have any family history of breast cancer. Just because a family member had breast cancer does not always mean that you will get breast cancer.We do know that there are some genes associated with a known increased risk of breast cancer. These are BRCA 1 (breast cancer 1, early onset human tumor suppressor gene) and BRCA 2 (breast cancer type 2, susceptibility protein). Only 10 percent of women with breast cancer have these inherited genes. These women usually get breast cancer at a young age and have multiple family members with breast or ovarian cancer.",
+     "created_by": "1",
+     "created_at": "2020-04-27 10:46:45",
+     "updated_at": "2020-04-27 12:43:59"
+   },
+   {
+     "faq_id": 5,
+     "faq_cat_id": 1,
+     "question": "What alternative therapies can be used to treat migraine?",
+     "answer": "The most common non-medical treatment for headache is relaxation training. Many studies have demonstrated that relaxation training is equally as effective for treatment of migraine as medications. This training takes more time and effort than using a medication, but once learned, it is free, can be used whenever the patient wishes, and has no negative side effects.\nExercise has been shown to reduce headache risk and psychotherapy often helps patients learn to identify and manage headache-triggering emotional stress.\n",
+     "created_by": "1",
+     "created_at": "2020-04-27 10:46:45",
+     "updated_at": "2020-04-27 12:51:24"
+   },
+   {
+     "faq_id": 6,
+     "faq_cat_id": 1,
+     "question": "How long does the flu last?\n",
+     "answer": "This varies to some extent with the strain each year, and obviously goes on longer if complications develop. But the typical course of the flu is seven to ten days. While you're waiting for the virus to pass, prevent it from getting worse by drinking plenty of fluids, washing hands frequently, and eating vitamin D-fortified foods like orange juice and yogurt.",
+     "created_by": "1",
+     "created_at": "2020-04-27 10:46:45",
+     "updated_at": "2020-04-27 12:52:16"
+   },
+   {
+     "faq_id": 7,
+     "faq_cat_id": 1,
+     "question": "When do you ovulate?",
+     "answer": "If you have a period once a month, you're ovulating once a month.The time of ovulation is usually in the middle of that cycle, approximately two weeks after the day of your last period.The average menstrual cycle is between 25 and 35 days, but if you have longer intervals between periods, every two months, that means you're only ovulating once every two months. If that's the case for you, an at-home ovulation test can help you pinpoint exactly when ovulation occurs. These tests typically have strips that can detect hormonal changes in the urine one to two days before ovulation. They can help you get a pretty reliable handle on the one or two days in your cycle that you're going to be ovulating, which is especially helpful if you're trying to get pregnant.",
+     "created_by": "1",
+     "created_at": "2020-04-27 10:46:45",
+     "updated_at": "2020-04-27 12:53:10"
+   },
+   {
+     "faq_id": 8,
+     "faq_cat_id": 1,
+     "question": "What do you recommend for premature ejaculation ?\n",
+     "answer": "Premature ejaculation can have physical or psychological causes. So you must first consult a urologist who will look for a physical cause and if this is not the case then you can see a sexologist who can see with you the psychological aspect.",
+     "created_by": "1",
+     "created_at": "2020-04-27 10:46:45",
+     "updated_at": "2020-04-27 12:53:55"
+   },
+   {
+     "faq_id": 9,
+     "faq_cat_id": 1,
+     "question": "What can i do to lose weight?\n",
+     "answer": "Weight depends on the balance between food intake and energy expenditure. Weight decreases when you lose more than you gain. For some it is easier to reduce intakes (diets: avoid high-calorie foods, ie sugar and fat in general. Drink a lot (water and not too cold!). easier to increase losses by maintaining the contributions: sport! (Cardio, endurance, degreasing ... regular and sustained.) Some can act on both aspects and that's even better!",
+     "created_by": "1",
+     "created_at": "2020-04-27 10:46:45",
+     "updated_at": "2020-04-27 12:54:41"
+   },
+   {
+     "faq_id": 10,
+     "faq_cat_id": 1,
+     "question": "I very often suffer from bloating. What do you recommend ?",
+     "answer": "The effective management of bloating depends on their cause. However, avoid any fermented product (cheese, curd ...), yeast (bread, cake ...). You should also drink water regularly. Play sports. You can also do probiotic cures. (See with a pharmacist). Well, I hope it will work, otherwise see a hepato-gastroenterologist anyway.",
+     "created_by": "1",
+     "created_at": "2020-04-27 10:46:45",
+     "updated_at": "2020-04-27 12:55:26"
+   }
+ ]
