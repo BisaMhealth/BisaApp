@@ -797,8 +797,11 @@ Future<dynamic> getFaq() async {
 
 Future<dynamic> getArticles(data) async {
   try {
+    // print('$newBisa/v1/patient/article/${data['id']}');
+    // print('${data['token']}');
     final http.Response response = await http.get(
       Uri.parse('$newBisa/v1/patient/article/${data['id']}'),
+      
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8',
         'Authorization': 'Bearer ${data['token']}',

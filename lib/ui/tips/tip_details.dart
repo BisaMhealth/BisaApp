@@ -14,6 +14,7 @@ class TipDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     var date = DateFormat.yMMMMd('en_US')
         .format(DateTime.parse(article['created_at']));
+
        // print(article['content']);
     return Scaffold(
       body: Stack(
@@ -31,10 +32,16 @@ class TipDetails extends StatelessWidget {
                 //   //   launchInBrowser(url!);
                 //   // },
                 // ),
-                SizedBox(
-                  width: MediaQuery.of(context).size.width *0.9,
-                  child: HtmlWidget(article['content'])
-                  ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal:22.0),
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width,
+                    child: HtmlWidget(
+                      article['content'],
+                    )
+                    ),
+                ),
+                
               ],
             ),
           ),
