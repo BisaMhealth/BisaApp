@@ -188,7 +188,7 @@ class TipsPageState extends State<TipsPage> {
                                                 '${e['title']}',
                                                 style: TextStyle(
                                                     fontFamily: 'Poppins',
-                                                    fontSize: 15.sp,
+                                                    fontSize: 13.sp,
                                                     fontWeight: FontWeight.w600,
                                                     color: const Color.fromRGBO(
                                                         97, 99, 95, 0.98)),

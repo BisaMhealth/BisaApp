@@ -109,7 +109,7 @@ class MyAppState extends State<MyApp> {
       builder: (context, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'Flutter Demo',
+          title: 'Bisa App',
           theme: ThemeData(
             scaffoldBackgroundColor: const Color.fromRGBO(255, 255, 255, 0.98),
             // primarySwatch: Colors.blue,
