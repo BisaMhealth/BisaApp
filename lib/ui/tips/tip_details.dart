@@ -98,7 +98,7 @@ class TipDetails extends StatelessWidget {
                                 fontFamily: 'Poppins',
                                 fontSize: 30.sp,
                                 fontWeight: FontWeight.w600,
-                                color: Colors.white,
+                                color: const Color.fromARGB(255, 205, 46, 46),
                               ),
                               textAlign: TextAlign.center,
                               maxLines: 3,
