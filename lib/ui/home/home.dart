@@ -900,7 +900,7 @@ class HomeState extends State<Home> with SingleTickerProviderStateMixin {
                 ),
               ],
             ),
-            //TODO: Fix this (Area for this gesture detection is too wide)
+            
             Positioned(
               top: (0.28.sh),
               right: 0,

@@ -15,7 +15,6 @@ class TipDetails extends StatelessWidget {
     var date = DateFormat.yMMMMd('en_US')
         .format(DateTime.parse(article['created_at']));
 
-        print(article['content']);
     return Scaffold(
       body: Stack(
         children: [
