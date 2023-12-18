@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 import 'package:transparent_image/transparent_image.dart';
-// import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
+//import 'package:flutter_html/flutter_html.dart';
+ import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 
 class TipDetails extends StatelessWidget {
   const TipDetails({Key? key, required this.article}) : super(key: key);
@@ -13,6 +14,7 @@ class TipDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     var date = DateFormat.yMMMMd('en_US')
         .format(DateTime.parse(article['created_at']));
+
     return Scaffold(
       body: Stack(
         children: [
@@ -22,13 +24,23 @@ class TipDetails extends StatelessWidget {
                 SizedBox(
                   height: 305.h,
                 ),
+               
                 // Html(
                 //   data: article['content'],
                 //   // onLinkTap: (url,RenderContext context,toHome,elt){
                 //   //   launchInBrowser(url!);
                 //   // },
                 // ),
-                // HtmlWidget(article['content']),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal:22.0),
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width,
+                    child: HtmlWidget(
+                      article['content'],
+                    )
+                    ),
+                ),
+                
               ],
             ),
           ),

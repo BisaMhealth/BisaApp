@@ -900,27 +900,28 @@ class HomeState extends State<Home> with SingleTickerProviderStateMixin {
                 ),
               ],
             ),
+            
             Positioned(
-              top: (0.18.sh),
+              top: (0.28.sh),
               right: 0,
-              child: InkWell(
-                onTap: () {
-                  //open call dialog
-                  showCallDialog();
-                },
-                child: Container(
-                  decoration: BoxDecoration(boxShadow: [
-                    BoxShadow(
-                      offset: const Offset(0, -10),
-                      blurRadius: 60,
-                      spreadRadius: 0,
-                      color: Colors.black.withOpacity(0.05),
-                    )
-                  ]),
+              child: Container(
+                decoration: BoxDecoration(boxShadow: [
+                  BoxShadow(
+                    offset: const Offset(0, -10),
+                    blurRadius: 60,
+                    spreadRadius: 0,
+                    color: Colors.black.withOpacity(0.05),
+                  )
+                ]),
+                child: InkWell(
+                  onTap: () {
+                    //open call dialog
+                    showCallDialog();
+                  },
                   child: CustomPaint(
                     size: Size(
-                      120.w,
-                      (120.w * 2.8727272727272726).toDouble(),
+                      70.w,
+                      (80.w * 2.8727272727272726).toDouble(),
                     ),
                     painter: CallOvalPainter(),
                   ),
