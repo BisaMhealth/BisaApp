@@ -49,6 +49,7 @@ class HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                   desktopMode: false,
                                   privacyEnhanced: true,
                                   useHybridComposition: true,
+                                  autoPlay: false,
                                 )
                               );
 
