@@ -1,3 +1,5 @@
+import 'dart:io' show Platform;
+
 import 'package:bisa_app/animation/fade_animation.dart';
 import 'package:bisa_app/models/chat_list_response.dart';
 import 'package:bisa_app/models/current_user.dart';
@@ -269,7 +271,7 @@ class HomePageState extends State<HomePage> {
           //   shapeBorder: CircleBorder(),
           //   child:
           FloatingActionButton(
-        backgroundColor: Colors.white,
+        backgroundColor: Platform.isIOS?Colors.transparent:Colors.white,
         child: Container(
           height: 50,
           decoration: const BoxDecoration(
