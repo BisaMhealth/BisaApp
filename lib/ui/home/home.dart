@@ -20,6 +20,7 @@ import 'package:page_animation_transition/page_animation_transition.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:transparent_image/transparent_image.dart';
+import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -39,12 +40,25 @@ class HomeState extends State<Home> with SingleTickerProviderStateMixin {
   ];
   var unselectedColor = [Colors.white, Colors.white];
 
+  var controller = YoutubePlayerController(
+                                initialVideoId: 'fmImgyDhdEM',
+                                params: const YoutubePlayerParams(
+                                  showControls: true,
+                                  showFullscreenButton: true,
+                                  desktopMode: false,
+                                  privacyEnhanced: true,
+                                  useHybridComposition: true,
+                                  autoPlay: false,
+                                )
+                              );
+
   // var selectedId;
   late TabController _tabController;
 
   @override
   void initState() {
     super.initState();
+
 
     // _askVal = 1.0;
     articleCat = 4;
@@ -785,9 +799,37 @@ class HomeState extends State<Home> with SingleTickerProviderStateMixin {
                       height: 10.h,
                     ),
                     //video
-
+                    FadeAnimation(
+                      1.6,
+                      -30,
+                      0,
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              'Video',
+                              style: TextStyle(
+                                fontFamily: 'Poppins',
+                                fontWeight: FontWeight.w600,
+                                fontSize: 17.sp,
+                                color: const Color.fromRGBO(99, 93, 93, 0.98),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child:Card(
+                        child:  YoutubePlayerIFrame(
+                                      controller: controller
+                                    ),
+                      )
+                    ),
                     SizedBox(
-                      height: 80.h,
+                      height: 85.h,
                     ),
                   ],
                 ),

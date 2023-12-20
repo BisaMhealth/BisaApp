@@ -18,6 +18,7 @@ class VideoPage extends StatefulWidget {
 
 class VideoPageState extends State<VideoPage> {
   late CurrentUser currentUser;
+  
   // VideoItem videoItem;
 
   List<YoutubePlayerController> youtubeControllers = [];
