@@ -111,6 +111,13 @@ class TipDetails extends StatelessWidget {
                                 fontSize: 30.sp,
                                 fontWeight: FontWeight.w600,
                                 color: const Color.fromARGB(255, 205, 46, 46),
+                                // shadows: const <Shadow>[
+                                //  Shadow(
+                                //       offset: Offset(10.0, 10.0),
+                                //       blurRadius: 3.0,
+                                //       color: Color.fromARGB(255, 0, 0, 0),
+                                //     ),
+                                // ]
                               ),
                               textAlign: TextAlign.center,
                               maxLines: 3,
