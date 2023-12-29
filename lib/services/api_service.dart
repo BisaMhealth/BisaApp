@@ -72,8 +72,10 @@ Future<LoginResponse> loginUser(data) async {
 
 Future<dynamic> resetPwd(data) async {
   try {
+   
     final http.Response response = await http
         // .post(Uri.parse('$oldBisa/user/role/login'),
+        
         .post(Uri.parse('$newBisa/v1/patient/auth/reset-password'),
             headers: <String, String>{
               'Content-Type': 'application/json; charset=UTF-8',
@@ -132,6 +134,10 @@ Future<dynamic> resetPwd(data) async {
     // return LoginResponse(code: 405,status: 'error',message: 'Sorry Unable to Process Request.' );
   }
 }
+
+//TODO: implement
+Future<dynamic> EditUserProfile(data) async {}
+
 
 Future<SignResponse> registerUser(data) async {
   try {
