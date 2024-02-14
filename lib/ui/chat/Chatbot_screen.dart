@@ -1,5 +1,6 @@
 
 import 'package:bisa_app/models/chatbotmessage.dart';
+import 'package:bisa_app/utils/validator.dart';
 import 'package:chat_bubbles/message_bars/message_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -51,6 +52,30 @@ final _formkey = GlobalKey<FormState>();
             key: _formkey,
             child: TextFormField(
               controller: messagecontroller,
+              validator: (value) => Validator.textValidator(value),
+              decoration: InputDecoration(
+                          hintText: "Type your message here",
+                          hintMaxLines: 1,
+                          contentPadding: const EdgeInsets.symmetric(
+                              horizontal: 8.0, vertical: 10),
+                         // hintStyle: messageBarHintStyle,
+                          fillColor: Colors.white,
+                          filled: true,
+                          enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                            borderSide: const BorderSide(
+                              color: Colors.white,
+                              width: 0.2,
+                            ),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                            borderSide: const BorderSide(
+                              color: Colors.black26,
+                              width: 0.2,
+                            ),
+                          ),
+                        ),
             ),
           ),
           //trailing: ElevatedButton(onPressed: (){}, child: Text("Send")),
