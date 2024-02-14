@@ -6,6 +6,7 @@ import 'package:bisa_app/models/current_user.dart';
 import 'package:bisa_app/providers/bottom_nav_provider.dart';
 import 'package:bisa_app/providers/current_user_provider.dart';
 import 'package:bisa_app/services/api_service.dart';
+import 'package:bisa_app/ui/chat/Chatbot_screen.dart';
 // import 'package:bisa_app/ui/chat/chat_details.dart';
 import 'package:bisa_app/ui/chat/chat_list.dart';
 import 'package:bisa_app/ui/chat/start_question.dart';
@@ -284,7 +285,8 @@ class HomePageState extends State<HomePage> {
           Navigator.push(
             context,
             MaterialPageRoute<void>(
-              builder: (BuildContext context) => const StartQuestion(),
+            //  builder: (BuildContext context) => const StartQuestion(),
+            builder: (BuildContext context) => ChatbotScreen(),
             ),
           );
         },
