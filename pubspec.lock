@@ -512,6 +512,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.0.2"
+  ikchatbot:
+    dependency: "direct main"
+    description:
+      name: ikchatbot
+      sha256: "65f00b9f26e2cce4c973e5fe44b98983a3cdb83942a5b0b1dad5b2b42c3c12ad"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.5"
   image:
     dependency: transitive
     description:
@@ -656,6 +664,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
+  mailer:
+    dependency: transitive
+    description:
+      name: mailer
+      sha256: d25d89555c1031abacb448f07b801d7c01b4c21d4558e944b12b64394c84a3cb
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.1.0"
   matcher:
     dependency: transitive
     description:

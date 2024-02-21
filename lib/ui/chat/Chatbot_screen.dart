@@ -27,7 +27,7 @@ final _formkey = GlobalKey<FormState>();
 
 void sendMsg() async {
     String text = messagecontroller.text;
-    String apiKey = "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";
+    String apiKey = "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";
     messagecontroller.clear();
     try {
       if (text.isNotEmpty) {
@@ -63,6 +63,21 @@ void sendMsg() async {
                 chatbotmessages(
                     isSender: false,
                    message: json["choices"][0]["message"]["content"]
+                        .toString()
+                        .trimLeft()));
+          });
+          scrollController.animateTo(0.0,
+              duration: const Duration(seconds: 1), curve: Curves.easeOut);
+        }else{
+          var json = jsonDecode(response.body);
+          print(json["choices"][0]["message"]["content"]);
+          setState(() {
+            isTyping = false;
+            msgs.insert(
+                0,
+                chatbotmessages(
+                    isSender: false,
+                   message: "An error occurred, please try again!"
                         .toString()
                         .trimLeft()));
           });
