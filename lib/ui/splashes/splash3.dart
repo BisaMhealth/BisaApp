@@ -1,6 +1,5 @@
 
 import 'package:bisa_app/animation/PageTransition.dart';
-import 'package:bisa_app/ui/splashes/splash2.dart';
 import 'package:bisa_app/ui/splashes/splash4.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
@@ -72,7 +71,7 @@ class _Splash3State extends State<Splash3> {
             height: MediaQuery.of(context).size.height - 205,
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/imgs/splash1.png'),
+                image: AssetImage('assets/imgs/splash3.png'),
                 fit: BoxFit.fill,
               ),
             ),

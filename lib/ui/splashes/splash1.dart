@@ -3,7 +3,6 @@
 import 'package:bisa_app/animation/PageTransition.dart';
 import 'package:bisa_app/ui/splashes/splash2.dart';
 import 'package:flutter/material.dart';
-import 'package:page_animation_transition/page_animation_transition.dart';
 import 'package:page_transition/page_transition.dart';
 
 class Splash1 extends StatefulWidget {
