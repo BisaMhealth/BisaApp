@@ -7,6 +7,7 @@ import 'package:bisa_app/ui/insurance/confirm_form.dart';
 import 'package:bisa_app/ui/login/login_page.dart';
 import 'package:bisa_app/ui/onboarding.dart';
 import 'package:bisa_app/ui/splash.dart';
+import 'package:bisa_app/ui/splashes/splash1.dart';
 // import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -154,8 +155,8 @@ class MyAppState extends State<MyApp> {
                   },
                 ));
           },
-          // home: Splash(),
-          initialRoute: '/splash',
+           home: Splash1(),
+         // initialRoute: '/splash',
           routes: {
             '/onboarding': (context) => const OnBoarding(),
             '/action': (context) => const ConfirmForm(),

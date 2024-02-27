@@ -2,9 +2,11 @@
 import 'dart:convert';
 
 import 'package:bisa_app/models/chatbotmessage.dart';
+import 'package:bisa_app/models/keyword_response.dart';
 import 'package:bisa_app/ui/widgets/Alert.dart';
 import 'package:bisa_app/utils/validator.dart';
 import 'package:chat_bubbles/bubbles/bubble_normal.dart';
+import 'package:chatingbot/ikchatbot.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -20,9 +22,83 @@ class ChatbotScreen extends StatefulWidget {
 }
 
 class _ChatbotScreenState extends State<ChatbotScreen> {
+
+ late dynamic chatBotConfig;
+
+@override
+  void initState() {
+   // initialize();
+    super.initState();
+  }
+  
+
+  initialize(){
+     chatBotConfig = IkChatBotConfig(
+    //SMTP Rating to your mail Settings
+    bottextcolor: Colors.black,
+    usertextcolor: Colors.white,
+    useAsset: false,
+    backgroundAssetimage: '',
+    ratingIconYes: const Icon(Icons.star),
+    ratingIconNo: const Icon(Icons.star_border),
+    ratingIconColor: Colors.black,
+    ratingBackgroundColor: Colors.white,
+    ratingButtonText: 'Submit Rating',
+    thankyouText: 'Thanks for your rating!',
+    ratingText: 'Rate your experience:',
+    ratingTitle: 'Thank you for using the chatbot!',
+    body: 'This is a test email sent from Flutter and Dart.',
+    subject: 'Test Rating',
+    recipient: 'recipient@example.com',
+    isSecure: false,
+    senderName: 'Your Name',
+    smtpUsername: 'Your Email',
+    smtpPassword: 'your password',
+    smtpServer: 'stmp.gmail.com',
+    smtpPort: 587,
+    //Settings to your system Configurations
+    sendIcon: const Icon(Icons.send, color: Colors.greenAccent),
+    userIcon: const Icon(Icons.person, color: Colors.white),
+    botIcon: const Icon(Icons.android, color: Colors.white),
+    botChatColor:  Colors.white,
+    delayBot: 100,
+    closingTime: 1,
+    delayResponse: 1,
+    userChatColor: Colors.greenAccent,
+    waitingTime: 1,
+    keywords: keywords,
+    responses: responses,
+    backgroundColor: Colors.white,
+    backgroundImage: 'https://cdn.wallpapersafari.com/54/0/HluF7g.jpg',
+    initialGreeting:
+    "👋 Hello! \nWelcome to BisaBot\nHow can I assist you today?",
+    defaultResponse: "Sorry, I didn't understand your response.",
+    inactivityMessage: "Is there anything else you need help with?",
+    closingMessage: "This conversation will now close.",
+    inputHint: 'Send a message',
+    waitingText: 'Please wait...',
+  );
+
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    initialize();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Chatbot'),
+        actions: [
+          IconButton(onPressed: (){}, icon: Icon(
+            Icons.chat_bubble_outline_outlined,
+            color: Colors.greenAccent,
+            )
+            )
+        ],
+      ),
+      body: ikchatbot(
+        config: chatBotConfig,
+      ),
+    );
   }
 }
 

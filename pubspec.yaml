@@ -67,7 +67,11 @@ dependencies:
   flutter_widget_from_html: ^0.14.9
   video_player: ^2.7.2
   chat_bubbles: ^1.5.0
-  ikchatbot: ^1.0.5
+  # ikchatbot: ^1.0.5
+  chatingbot:
+        git:
+            url: https://github.com/Aquarius-blake/chatbotB
+            ref: main
   # flutter_inappwebview: ^5.7.2+3
 
 dev_dependencies:
