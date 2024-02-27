@@ -1,4 +1,7 @@
+import 'package:bisa_app/animation/PageTransition.dart';
+import 'package:bisa_app/ui/splashes/splash3.dart';
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 
 class Splash2 extends StatefulWidget {
   const Splash2({super.key});
@@ -80,7 +83,9 @@ class _Splash2State extends State<Splash2> {
           horizontal: 20
         ),
         child: GestureDetector(
-          onTap: (){},
+          onTap: (){
+            PagetransAnimate(context, PageTransitionType.rightToLeft, Splash3());
+          },
           child: Container(
             padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(

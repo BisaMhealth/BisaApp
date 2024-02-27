@@ -1,6 +1,10 @@
 
 
+import 'package:bisa_app/animation/PageTransition.dart';
+import 'package:bisa_app/ui/splashes/splash2.dart';
 import 'package:flutter/material.dart';
+import 'package:page_animation_transition/page_animation_transition.dart';
+import 'package:page_transition/page_transition.dart';
 
 class Splash1 extends StatefulWidget {
   const Splash1({super.key});
@@ -41,7 +45,7 @@ class _Splash1State extends State<Splash1> {
                 )
                 ),
                 Text(
-                  "Professional medical experts at your service",
+                  "Emphatic AI Wellness Chatbot for All",
                    style: const TextStyle(
                         fontFamily: "Sofia Pro",
                         fontSize: 24,
@@ -52,7 +56,7 @@ class _Splash1State extends State<Splash1> {
                   ),
                   SizedBox(height: 5,),
                   Text(
-                  "Achieve your wellness goals with our AI-powered platform to your unique needs",
+                  "Experience compassionate and personalized care with our AI chatbot",
                    style: const TextStyle(
                         fontFamily: "Sofia Pro",
                         fontSize: 14,
@@ -82,7 +86,17 @@ class _Splash1State extends State<Splash1> {
           horizontal: 20
         ),
         child: GestureDetector(
-          onTap: (){},
+          onTap: (){
+           // PageAnimationTransition(page: page, pageAnimationType: pageAnimationType)
+           PagetransAnimate(context, PageTransitionType.rightToLeft, Splash2());
+          //    Navigator.push(
+          //   context,
+          //   MaterialPageRoute<void>(
+            
+          //   builder: (BuildContext context) => Splash2(),
+          //   ),
+          // );
+          },
           child: Container(
             padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
