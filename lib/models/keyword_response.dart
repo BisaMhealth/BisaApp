@@ -44,8 +44,8 @@
   'I\'m here to assist you in matters concerning your health. Do you have any health related issues?',
   'I can\'t sing, but I can help you with your health related issues :)',
   'You can tap the top chat icon to speak to a doctor.',
-  'I\'m here to assist you, not to my personal feelings.',
+  'I\'m here to assist you, not to express my personal feelings.',
   'I don\'t experience time, so I don\'t know the latest news.',
-  'Laughter is the best medicine. but if laugh too much, you might need medicine. 😂',
+  'They say laughter is the best medicine. but if you laugh too much, you might need medicine. 😂',
   'Glad to see you happy :)'
 ];
