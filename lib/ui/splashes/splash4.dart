@@ -1,5 +1,6 @@
 
 import 'package:bisa_app/animation/PageTransition.dart';
+import 'package:bisa_app/ui/chat/Chatbot_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
@@ -70,7 +71,7 @@ class _Splash4State extends State<Splash4> {
             height: MediaQuery.of(context).size.height - 205,
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/imgs/splash4.png'),
+                image: AssetImage('assets/imgs/Splash4.png'),
                 fit: BoxFit.fill,
               ),
             ),
@@ -85,7 +86,7 @@ class _Splash4State extends State<Splash4> {
         child: GestureDetector(
           onTap: (){
            // PageAnimationTransition(page: page, pageAnimationType: pageAnimationType)
-           PagetransAnimate(context, PageTransitionType.rightToLeft, Scaffold());
+           PagetransAnimate(context, PageTransitionType.rightToLeft, ChatbotScreen());
           //    Navigator.push(
           //   context,
           //   MaterialPageRoute<void>(
