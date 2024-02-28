@@ -19,7 +19,9 @@
   'can you sing',
   'to a doctor',
   'are you angry',
-  'latest news'
+  'latest news',
+  '😂😂😂',
+  '😂😂'
 ];
 
  List<String> responses = [
@@ -43,5 +45,7 @@
   'I can\'t sing, but I can help you with your health related issues :)',
   'You can tap the top chat icon to speak to a doctor.',
   'I\'m here to assist you, not to my personal feelings.',
-  'I don\'t experience time, so I don\'t know the latest news.'
+  'I don\'t experience time, so I don\'t know the latest news.',
+  'Laughter is the best medicine. but if laugh too much, you might need medicine. 😂',
+  'Glad to see you happy :)'
 ];
