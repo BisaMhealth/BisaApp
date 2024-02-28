@@ -17,7 +17,9 @@
   'how old are you',
   'your role',
   'can you sing',
-  'to a doctor'
+  'to a doctor',
+  'are you angry',
+  'latest news'
 ];
 
  List<String> responses = [
@@ -39,5 +41,7 @@
   'I don\'t have an age, I\'m just a program. :)',
   'I\'m here to assist you in matters concerning your health. Do you have any health related issues?',
   'I can\'t sing, but I can help you with your health related issues :)',
-  'You can tap the top chat icon to speak to a doctor.'
+  'You can tap the top chat icon to speak to a doctor.',
+  'I\'m here to assist you, not to my personal feelings.',
+  'I don\'t experience time, so I don\'t know the latest news.'
 ];
