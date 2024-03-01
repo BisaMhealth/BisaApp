@@ -49,7 +49,7 @@ class _ChatbotScreenState extends State<ChatbotScreen> {
     ratingTitle: 'Thank you for using the chatbot!',
     body: 'This is a test email sent from Flutter and Dart.',
     subject: 'Test Rating',
-    recipient: 'recipient@example.com',
+    recipient: 'danbaid72@gmail.com',
     isSecure: false,
     senderName: 'Your Name',
     smtpUsername: 'Your Email',
@@ -71,7 +71,7 @@ class _ChatbotScreenState extends State<ChatbotScreen> {
     backgroundColor: Colors.white,
     backgroundImage: 'https://cdn.wallpapersafari.com/54/0/HluF7g.jpg',
     initialGreeting:
-    "👋 Hello! \nWelcome to BisaBot\nHow can I assist you today?",
+    "👋 Hello! \nWelcome to Bisa Health.\nHow can I assist you today?",
     defaultResponse: "Sorry, I didn't understand your response.",
     inactivityMessage: "Is there anything else you need help with?",
     closingMessage: "This conversation will now close.",

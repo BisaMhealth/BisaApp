@@ -110,7 +110,7 @@ class _Splash3State extends State<Splash3> {
             ),
             child: const Icon(
               Icons.arrow_forward_ios_outlined,
-              color: Color.fromARGB(255, 24, 44, 116),
+              color: Colors.yellowAccent,
             ),
           ),
         ),

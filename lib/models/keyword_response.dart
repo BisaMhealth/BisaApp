@@ -1,4 +1,6 @@
  List<String> keywords = [
+  'do you do'
+  'can you do',
   'greetings',
   'good morning',
   'who are you',
@@ -25,6 +27,8 @@
 ];
 
  List<String> responses = [
+  'I can tell a joke, refer you to a doctor if necessary and I\'m also available for a quick chat',
+  'I can tell a joke, refer you to a doctor if necessary and I\'m also available for a quick chat',
   'Greetings! How can I be of service?',
   'Good morning! How can I be of service?',
   'I am a bot created by bisa Technologies to assist with your health related.How can I be of service?',
