@@ -1,6 +1,8 @@
 
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+// import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 
 class Intro_DOB extends StatefulWidget {
   const Intro_DOB({super.key});
@@ -12,32 +14,44 @@ class Intro_DOB extends StatefulWidget {
 class _Intro_DOBState extends State<Intro_DOB> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold( body: Container(
+    return Scaffold( 
+      body: Container(
         padding: const EdgeInsets.symmetric(
           horizontal: 20
           ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(padding: EdgeInsets.only(
+            Padding(
+              padding: EdgeInsets.only(
                   top: MediaQuery.of(context).padding.top + 20,
                   bottom: 20,
                 ), 
                 child: Row(
                   children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                        border: Border.all(
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.of(context).pop();
+                      },
+                      child: Container(
+                        padding: const EdgeInsets.all(5),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: Color.fromRGBO(58, 75, 149, 1),
+                            width: 1
+                          )
+                        ),
+                        child: const Icon(
+                          Icons.arrow_back_ios_outlined,
                           color: Color.fromRGBO(58, 75, 149, 1),
-                          width: 1
-                        )
-                      ),
-                      child: const Icon(
-                        Icons.arrow_back_ios_outlined,
-                        color: Color.fromRGBO(58, 75, 149, 1),
+                        ),
                       ),
                     ),
+                    SizedBox(
+                      width: 20,
+                      ),
                     Container(
                       width: MediaQuery.of(context).size.width * 0.5,
                       child: LinearProgressIndicator(
@@ -61,13 +75,27 @@ class _Intro_DOBState extends State<Intro_DOB> {
                         height: 1.0
                         ),
                   ),
-                  
+                  const SizedBox(height: 20),
+                  // SfDateRangePicker(),
+                Container(
+                  height: MediaQuery.of(context).size.height * 0.5,
+                 // child: SfDateRangePicker(),
+                  child: DateRangePickerDialog(
+                    firstDate: DateTime(1900), 
+                    lastDate: DateTime.now()
+                    )
+                  // child: CupertinoDatePicker(
+                  //   mode: CupertinoDatePickerMode.date,
+                  //   onDateTimeChanged: (value){}
+                  //   ),
+                  )
           ],
         ),
       ),
       bottomNavigationBar: Container(
         margin: const EdgeInsets.symmetric(
           horizontal: 20,
+          vertical: 10
           ),
         padding: const EdgeInsets.symmetric(
           horizontal: 20,
