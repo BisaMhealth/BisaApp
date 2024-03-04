@@ -1,6 +1,7 @@
 
 import 'package:bisa_app/animation/PageTransition.dart';
 import 'package:bisa_app/ui/chat/Chatbot_screen.dart';
+import 'package:bisa_app/ui/home/Intro_Screens/Gender.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
@@ -86,7 +87,8 @@ class _Splash4State extends State<Splash4> {
         child: GestureDetector(
           onTap: (){
            // PageAnimationTransition(page: page, pageAnimationType: pageAnimationType)
-           PagetransAnimate(context, PageTransitionType.rightToLeft, ChatbotScreen());
+          //  PagetransAnimate(context, PageTransitionType.rightToLeft, ChatbotScreen());
+          PagetransAnimate(context, PageTransitionType.rightToLeft, Intro_Gender());
           //    Navigator.push(
           //   context,
           //   MaterialPageRoute<void>(

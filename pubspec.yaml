@@ -73,6 +73,7 @@ dependencies:
             url: https://github.com/Aquarius-blake/chatbotB
             ref: main
   page_transition: ^2.1.0
+  textfield_tags: ^2.0.2
   # flutter_inappwebview: ^5.7.2+3
 
 dev_dependencies:
