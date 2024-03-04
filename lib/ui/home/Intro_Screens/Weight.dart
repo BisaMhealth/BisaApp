@@ -19,13 +19,15 @@ class _Intro_WeightState extends State<Intro_Weight> {
           ),
         child: Column(
           children: [
-            Padding(padding: EdgeInsets.only(
+            Padding(
+              padding: EdgeInsets.only(
                   top: MediaQuery.of(context).padding.top + 20,
                   bottom: 20,
                 ), 
                 child: Row(
                   children: [
                     Container(
+                      padding: EdgeInsets.all(5),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(10),
@@ -38,6 +40,9 @@ class _Intro_WeightState extends State<Intro_Weight> {
                         Icons.arrow_back_ios_outlined,
                         color: Color.fromRGBO(58, 75, 149, 1),
                       ),
+                    ),
+                    SizedBox(
+                      width: 20,
                     ),
                     Container(
                       width: MediaQuery.of(context).size.width * 0.5,

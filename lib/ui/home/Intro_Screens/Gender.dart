@@ -1,6 +1,9 @@
 
 
+import 'package:bisa_app/animation/PageTransition.dart';
+import 'package:bisa_app/ui/home/Intro_Screens/Weight.dart';
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class Intro_Gender extends StatefulWidget {
@@ -92,104 +95,129 @@ bool checkvalue = false;
                   SizedBox(
                     height: 20,
                   ),
-                  Container(
-                    height: 250,
-                    child: ScrollablePositionedList.builder(
-                      scrollDirection: Axis.horizontal,
-                            itemCount: 2,
-                            itemBuilder: (context, index) => GestureDetector(
-                              onTap: (){
-                                itemScrollController.scrollTo(
-                               // alignment: 250,
-                                index: index,
-                                duration: Duration(seconds: 2),
-                                curve: Curves.easeInOutCubic);
-                              },
-                              child: Container(
-                                margin: EdgeInsets.symmetric(
-                                  horizontal: 20
-                                ),
-                                padding: EdgeInsets.only(
-                                  left:20,
-                                  top:20
-                                ),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(20),
-                                  color: index != 0 ? Colors.black:Colors.orange
-                                ),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Row(
-                                      children: [
-                                        Text(
-                                        index == 0? "Female" : "Male",
-                                        style: TextStyle(
-                                          color: Colors.white,
-
-                                        ),
+                  Align(
+                    alignment: Alignment.center,
+                    child: Container(
+                      height: 250,
+                      child: ScrollablePositionedList.builder(
+                        scrollDirection: Axis.horizontal,
+                              itemCount: 2,
+                              itemBuilder: (context, index) => GestureDetector(
+                                onTap: (){
+                                  itemScrollController.scrollTo(
+                                 // alignment: 250,
+                                  index: index,
+                                  duration: Duration(seconds: 2),
+                                  curve: Curves.easeInOutCubic);
+                                  setState(() {
+                                    checkvalue= !checkvalue;
+                                  });
+                                },
+                                child: Container(
+                                  margin: EdgeInsets.symmetric(
+                                    horizontal: 20
+                                  ),
+                                  padding: EdgeInsets.only(
+                                    left:20,
+                                    top:20
+                                  ),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20),
+                                    color: index != 0 ? Color.fromRGBO(47, 72, 88, 1):
+                                    //Color.fromARGB(255, 239, 124, 82).withOpacity(0.5)
+                                    Color.fromARGB(255, 245, 163, 9).withOpacity(0.5).withBlue(80)
+                                  ),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Text(
+                                          index == 0? "Female" : "Male",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                    
                                           ),
-                                      ],
-                                    ),
-                                    Expanded(
-                                      child: Container(
-                                        width: 250,
-                                        padding: EdgeInsets.all(10),
-                                        decoration: BoxDecoration(
-                                          
-                                          image: DecorationImage(
-                                            fit: BoxFit.cover,
-                                            image: index == 0 ? const AssetImage('assets/imgs/female.png') : const AssetImage('assets/imgs/male.png')
-                                            )
-                                        ),
-                                        child: Text("$index")
-                                        ),
-                                    ),
-                                  ],
+                                            ),
+                                             Checkbox(
+                                     activeColor: Color.fromARGB(255, 51, 211, 75),
+                                     value:index!=1 ? checkvalue: !checkvalue, 
+                                     onChanged: (check){
+                                     setState(() {
+                                      if(check!= null){
+                                        checkvalue = !check;
+                                      }
+                                      //checkvalue = check!;
+                                     });
+                                          }
+                                          ),
+                                        ],
+                                      ),
+                                      Expanded(
+                                        child: Container(
+                                          width: 250,
+                                          padding: EdgeInsets.all(10),
+                                          decoration: BoxDecoration(
+                                            
+                                            image: DecorationImage(
+                                              fit: BoxFit.cover,
+                                              image: index == 0 ? const AssetImage('assets/imgs/female.png') : const AssetImage('assets/imgs/male.png')
+                                              )
+                                          ),
+                                          child: Text("$index")
+                                          ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
+                    
+                              itemScrollController: itemScrollController,
+                              scrollOffsetController: scrollOffsetController,
+                              itemPositionsListener: itemPositionsListener,
+                              scrollOffsetListener: scrollOffsetListener,
                             ),
-
-                            itemScrollController: itemScrollController,
-                            scrollOffsetController: scrollOffsetController,
-                            itemPositionsListener: itemPositionsListener,
-                            scrollOffsetListener: scrollOffsetListener,
-                          ),
+                    ),
                   ),
           ],
         ),
       ),
-      bottomNavigationBar: Container(
-        margin: const EdgeInsets.symmetric(
-          horizontal: 20,
-          vertical: 10
-          ),
-        padding: const EdgeInsets.symmetric(
-          horizontal: 20,
-          vertical: 20,
-          ),
-        decoration: BoxDecoration(
-          color: const Color.fromRGBO(47, 72, 88, 1),
-          borderRadius: BorderRadius.circular(10),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.withOpacity(0.1),
-              spreadRadius: 5,
-              blurRadius: 7,
-              offset: const Offset(0, -3), // changes position of shadow
+      bottomNavigationBar: GestureDetector(
+        onTap: (){
+          PagetransAnimate(context, PageTransitionType.rightToLeft, Intro_Weight());
+        },
+        child: Container(
+          margin: const EdgeInsets.symmetric(
+            horizontal: 20,
+            vertical: 10
             ),
-          ],
+          padding: const EdgeInsets.symmetric(
+            horizontal: 20,
+            vertical: 20,
+            ),
+          decoration: BoxDecoration(
+            color: const Color.fromRGBO(47, 72, 88, 1),
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.1),
+                spreadRadius: 5,
+                blurRadius: 7,
+                offset: const Offset(0, -3), // changes position of shadow
+              ),
+            ],
+          ),
+          child: const Text(
+            "Continue",
+            style:  TextStyle(
+              color: Colors.white,
+              fontSize: 18,
+              fontFamily: "Sofia Pro",
+              fontWeight: FontWeight.w500
+            ),
+            textAlign: TextAlign.center,
+            ),
         ),
-        child: const Text(
-          "Continue",
-          style:  TextStyle(
-            color: Colors.white,
-            fontSize: 18,
-            fontFamily: "Sofia Pro",
-            fontWeight: FontWeight.w500
-          ),
-          textAlign: TextAlign.center,
-          ),
       ),
     );
   }
