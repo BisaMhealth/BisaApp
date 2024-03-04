@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class Intro_Gender extends StatefulWidget {
   const Intro_Gender({super.key});
@@ -10,6 +11,15 @@ class Intro_Gender extends StatefulWidget {
 }
 
 class _Intro_GenderState extends State<Intro_Gender> {
+
+
+  final ItemScrollController itemScrollController = ItemScrollController();
+final ScrollOffsetController scrollOffsetController = ScrollOffsetController();
+final ItemPositionsListener itemPositionsListener = ItemPositionsListener.create();
+final ScrollOffsetListener scrollOffsetListener = ScrollOffsetListener.create();
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,6 +88,47 @@ class _Intro_GenderState extends State<Intro_Gender> {
                         color: Color.fromRGBO(58, 75, 149, 1),
                         height: 1.0
                         ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    height: 200,
+                    child: ScrollablePositionedList.builder(
+                      scrollDirection: Axis.horizontal,
+                            itemCount: 2,
+                            itemBuilder: (context, index) => GestureDetector(
+                              onTap: (){
+                                itemScrollController.scrollTo(
+                               // alignment: 250,
+                                index: index,
+                                duration: Duration(seconds: 2),
+                                curve: Curves.easeInOutCubic);
+                              },
+                              child: Container(
+                                margin: EdgeInsets.symmetric(
+                                  horizontal: 20
+                                ),
+                                decoration: BoxDecoration(
+                                  color: index == 0 ? Colors.black:Colors.orange
+                                ),
+                                child: Container(
+                                  width: 150,
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: index == 0 ? const AssetImage('assets/imgs/female.png') : const AssetImage('assets/imgs/male.png')
+                                      )
+                                  ),
+                                  child: Text("$index")
+                                  ),
+                              ),
+                            ),
+
+                            itemScrollController: itemScrollController,
+                            scrollOffsetController: scrollOffsetController,
+                            itemPositionsListener: itemPositionsListener,
+                            scrollOffsetListener: scrollOffsetListener,
+                          ),
                   ),
           ],
         ),

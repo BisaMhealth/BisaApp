@@ -74,6 +74,7 @@ dependencies:
             ref: main
   page_transition: ^2.1.0
   textfield_tags: ^2.0.2
+  scrollable_positioned_list: ^0.3.8
   # flutter_inappwebview: ^5.7.2+3
 
 dev_dependencies:
