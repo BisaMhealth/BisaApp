@@ -19,6 +19,7 @@ class _Intro_GenderState extends State<Intro_Gender> {
           horizontal: 20
           ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(padding: EdgeInsets.only(
                   top: MediaQuery.of(context).padding.top + 20,
@@ -27,6 +28,7 @@ class _Intro_GenderState extends State<Intro_Gender> {
                 child: Row(
                   children: [
                     Container(
+                      padding: const EdgeInsets.all(5),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(10),
@@ -39,6 +41,9 @@ class _Intro_GenderState extends State<Intro_Gender> {
                         Icons.arrow_back_ios_outlined,
                         color: Color.fromRGBO(58, 75, 149, 1),
                       ),
+                    ),
+                    SizedBox(
+                      width: 20,
                     ),
                     Container(
                       width: MediaQuery.of(context).size.width * 0.5,
@@ -80,6 +85,7 @@ class _Intro_GenderState extends State<Intro_Gender> {
       bottomNavigationBar: Container(
         margin: const EdgeInsets.symmetric(
           horizontal: 20,
+          vertical: 10
           ),
         padding: const EdgeInsets.symmetric(
           horizontal: 20,
@@ -105,6 +111,7 @@ class _Intro_GenderState extends State<Intro_Gender> {
             fontFamily: "Sofia Pro",
             fontWeight: FontWeight.w500
           ),
+          textAlign: TextAlign.center,
           ),
       ),
     );

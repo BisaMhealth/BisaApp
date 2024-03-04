@@ -15,6 +15,7 @@ class Splash1 extends StatefulWidget {
 class _Splash1State extends State<Splash1> {
   @override
   Widget build(BuildContext context) {
+    print(MediaQuery.of(context).size.height);
     return Scaffold(
       body: Column(
         children: [
@@ -23,6 +24,7 @@ class _Splash1State extends State<Splash1> {
               horizontal: 20
               ),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(padding: EdgeInsets.only(
                   top: MediaQuery.of(context).padding.top + 20,
@@ -69,7 +71,7 @@ class _Splash1State extends State<Splash1> {
           ),
           Container(
             width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height - 205,
+            height: MediaQuery.of(context).size.height *0.8376623377,
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/imgs/splash1.png'),

@@ -21,6 +21,7 @@ class _Splash2State extends State<Splash2> {
               horizontal: 20
               ),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(padding: EdgeInsets.only(
                   top: MediaQuery.of(context).padding.top + 20,
@@ -67,7 +68,7 @@ class _Splash2State extends State<Splash2> {
           ),
           Container(
             width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height - 205,
+            height: MediaQuery.of(context).size.height *0.8741,
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/imgs/splash2.png'),

@@ -22,6 +22,7 @@ class _Splash3State extends State<Splash3> {
               horizontal: 20
               ),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(padding: EdgeInsets.only(
                   top: MediaQuery.of(context).padding.top + 20,
@@ -43,7 +44,7 @@ class _Splash3State extends State<Splash3> {
                 )
                 ),
                 Text(
-                  "Emphatic AI Wellness Chatbot for All",
+                  "All your medications at one place",
                    style: const TextStyle(
                         fontFamily: "Sofia Pro",
                         fontSize: 24,
@@ -54,7 +55,7 @@ class _Splash3State extends State<Splash3> {
                   ),
                   SizedBox(height: 5,),
                   Text(
-                  "Experience compassionate and personalized care with our AI chatbot",
+                  "Easily track yoour medication and diet with the power of AI",
                    style: const TextStyle(
                         fontFamily: "Sofia Pro",
                         fontSize: 14,
@@ -68,7 +69,7 @@ class _Splash3State extends State<Splash3> {
           ),
           Container(
             width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height - 205,
+            height: MediaQuery.of(context).size.height *0.8741,
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/imgs/splash3.png'),

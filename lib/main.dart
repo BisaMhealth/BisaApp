@@ -139,7 +139,8 @@ class MyAppState extends State<MyApp> {
                     SystemChrome.setSystemUIOverlayStyle(
                         SystemUiOverlayStyle.light.copyWith(
                             statusBarIconBrightness: Brightness.dark,
-                            statusBarColor: Colors.white));
+                            statusBarColor: Colors.white
+                            ));
                   }
                 },
                 blurValue: 1,
@@ -150,7 +151,9 @@ class MyAppState extends State<MyApp> {
                   builder: (context) {
                     return MediaQuery(
                         data: MediaQuery.of(context)
-                            .copyWith(textScaleFactor: 1.0),
+                            .copyWith(
+                              textScaleFactor: 1.0
+                              ),
                         child: widget!);
                   },
                 ));
