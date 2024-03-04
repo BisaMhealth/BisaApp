@@ -12,6 +12,10 @@ class Intro_DOB extends StatefulWidget {
 }
 
 class _Intro_DOBState extends State<Intro_DOB> {
+
+  TextEditingController _DOB = TextEditingController();
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold( 
@@ -77,18 +81,33 @@ class _Intro_DOBState extends State<Intro_DOB> {
                   ),
                   const SizedBox(height: 20),
                   // SfDateRangePicker(),
-                Container(
-                  height: MediaQuery.of(context).size.height * 0.5,
-                 // child: SfDateRangePicker(),
-                  child: DateRangePickerDialog(
-                    firstDate: DateTime(1900), 
-                    lastDate: DateTime.now()
-                    )
-                  // child: CupertinoDatePicker(
-                  //   mode: CupertinoDatePickerMode.date,
-                  //   onDateTimeChanged: (value){}
-                  //   ),
-                  )
+                Theme(
+                  data: ThemeData(
+                    primarySwatch: Colors.green,
+                    colorScheme: ColorScheme.light(primary: Colors.greenAccent),
+                    splashColor: Colors.transparent,
+                    highlightColor: Colors.transparent
+                  ),
+                  child: Container(
+                    height: MediaQuery.of(context).size.height * 0.5,
+                    width: MediaQuery.of(context).size.width * 0.9,
+                    child: TextFormField(
+                      controller: _DOB,
+                      decoration: InputDecoration(
+                        suffix: IconButton(
+                          onPressed: (){}, 
+                          icon: Icon(
+                            Icons.calendar_today_outlined
+                            )
+                            )
+                      ),
+                    ),
+                    // child: DatePickerDialog(
+                    //   firstDate: DateTime(1900), 
+                    //   lastDate: DateTime.now()
+                    //   ),
+                  ),
+                )
           ],
         ),
       ),
