@@ -17,7 +17,7 @@ class _Intro_GenderState extends State<Intro_Gender> {
 final ScrollOffsetController scrollOffsetController = ScrollOffsetController();
 final ItemPositionsListener itemPositionsListener = ItemPositionsListener.create();
 final ScrollOffsetListener scrollOffsetListener = ScrollOffsetListener.create();
-
+bool checkvalue = false;
 
 
   @override
@@ -93,7 +93,7 @@ final ScrollOffsetListener scrollOffsetListener = ScrollOffsetListener.create();
                     height: 20,
                   ),
                   Container(
-                    height: 200,
+                    height: 250,
                     child: ScrollablePositionedList.builder(
                       scrollDirection: Axis.horizontal,
                             itemCount: 2,
@@ -109,18 +109,44 @@ final ScrollOffsetListener scrollOffsetListener = ScrollOffsetListener.create();
                                 margin: EdgeInsets.symmetric(
                                   horizontal: 20
                                 ),
-                                decoration: BoxDecoration(
-                                  color: index == 0 ? Colors.black:Colors.orange
+                                padding: EdgeInsets.only(
+                                  left:20,
+                                  top:20
                                 ),
-                                child: Container(
-                                  width: 150,
-                                  decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                      image: index == 0 ? const AssetImage('assets/imgs/female.png') : const AssetImage('assets/imgs/male.png')
-                                      )
-                                  ),
-                                  child: Text("$index")
-                                  ),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  color: index != 0 ? Colors.black:Colors.orange
+                                ),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Text(
+                                        index == 0? "Female" : "Male",
+                                        style: TextStyle(
+                                          color: Colors.white,
+
+                                        ),
+                                          ),
+                                      ],
+                                    ),
+                                    Expanded(
+                                      child: Container(
+                                        width: 250,
+                                        padding: EdgeInsets.all(10),
+                                        decoration: BoxDecoration(
+                                          
+                                          image: DecorationImage(
+                                            fit: BoxFit.cover,
+                                            image: index == 0 ? const AssetImage('assets/imgs/female.png') : const AssetImage('assets/imgs/male.png')
+                                            )
+                                        ),
+                                        child: Text("$index")
+                                        ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
 
