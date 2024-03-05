@@ -115,6 +115,46 @@ class MyAppState extends State<MyApp> {
             scaffoldBackgroundColor: const Color.fromRGBO(255, 255, 255, 0.98),
             // primarySwatch: Colors.blue,
             primaryColor: const Color(0xFFB5E255),
+            datePickerTheme: DatePickerThemeData(
+              backgroundColor: Colors.white,
+              surfaceTintColor: Colors.transparent,
+              inputDecorationTheme: const InputDecorationTheme(
+                border: InputBorder.none,
+                contentPadding: EdgeInsets.zero,
+              ),
+              dayBackgroundColor: MaterialStateProperty.resolveWith(
+                (states) {
+                  if (states.contains(MaterialState.selected)) {
+                    return const Color(0xFFB5E255);
+                  }
+                  return Colors.transparent;
+                },
+              ),
+              // dayOverlayColor: MaterialStateColor.resolveWith(
+              //   (states) => const Color(0xFFB5E255),
+              // ),
+              dayOverlayColor: MaterialStateProperty.all(
+                const Color(0xFFB5E255),
+              ),
+              confirmButtonStyle: ButtonStyle(
+                textStyle: MaterialStateProperty.all(
+                  const TextStyle(
+                    color: Color(0xFFB5E255),
+                    fontSize: 16,
+                  ),
+                ),
+                padding: MaterialStateProperty.all(
+                  const EdgeInsets.symmetric(
+                    horizontal: 40,
+                    vertical: 10,
+                  ),
+                ),
+                backgroundColor: MaterialStateProperty.all(
+                  const Color(0xFFB5E255),
+                ),
+              ),
+            )
+            // colorSchemeSeed: Color.fromARGB(255, 199, 235, 122)
             // textTheme: MediaQuery.of(context).copyWith(textScaleFactor: 1.0)
           ),
           // builder: (context, widget) {
