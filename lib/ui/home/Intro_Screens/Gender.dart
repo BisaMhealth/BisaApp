@@ -115,7 +115,7 @@ bool checkvalue = false;
                                 },
                                 child: Container(
                                   margin: EdgeInsets.symmetric(
-                                    horizontal: 20
+                                    horizontal: 10
                                   ),
                                   padding: EdgeInsets.only(
                                     left:20,

@@ -84,28 +84,28 @@ class _Intro_DOBState extends State<Intro_DOB> {
                 Theme(
                   data: ThemeData(
                     primarySwatch: Colors.green,
-                    colorScheme: ColorScheme.light(primary: Colors.greenAccent),
+                    colorScheme: ColorScheme.light(primary: Colors.white),
                     splashColor: Colors.transparent,
                     highlightColor: Colors.transparent
                   ),
                   child: Container(
                     height: MediaQuery.of(context).size.height * 0.5,
                     width: MediaQuery.of(context).size.width * 0.9,
-                    child: TextFormField(
-                      controller: _DOB,
-                      decoration: InputDecoration(
-                        suffix: IconButton(
-                          onPressed: (){}, 
-                          icon: Icon(
-                            Icons.calendar_today_outlined
-                            )
-                            )
-                      ),
-                    ),
-                    // child: DatePickerDialog(
-                    //   firstDate: DateTime(1900), 
-                    //   lastDate: DateTime.now()
+                    // child: TextFormField(
+                    //   controller: _DOB,
+                    //   decoration: InputDecoration(
+                    //     suffix: IconButton(
+                    //       onPressed: (){}, 
+                    //       icon: Icon(
+                    //         Icons.calendar_today_outlined
+                    //         )
+                    //         )
                     //   ),
+                    // ),
+                    child: DatePickerDialog(
+                      firstDate: DateTime(1900), 
+                      lastDate: DateTime.now()
+                      ),
                   ),
                 )
           ],
