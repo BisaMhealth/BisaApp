@@ -10,6 +10,14 @@ class Intro_Bloodtype extends StatefulWidget {
 }
 
 class _Intro_BloodtypeState extends State<Intro_Bloodtype> {
+
+
+  int Selectedindex = 0;
+  List bloodgroups = ["A","B","AB","O"];
+  int SelectedRhesus = 0;
+  List RhesusFactors = ["+","-"];
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,15 +76,118 @@ class _Intro_BloodtypeState extends State<Intro_Bloodtype> {
                   ),
                 const  SizedBox(height: 10,),
                 Container(
-                  child: Row(
-                    children: [],
-                  ),
+                  height: 56,
+                  padding: EdgeInsets.zero,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.white,
+                    ),
+                  child: ListView.builder(
+                    // padding: EdgeInsets.zero,
+                    scrollDirection: Axis.horizontal,
+                    itemCount: 4,
+                    itemBuilder: (context,index) =>  GestureDetector(
+                      onTap: (){
+                        setState(() {
+                          Selectedindex = index;
+                        });
+                      },
+                      child: Container(
+                          padding: const EdgeInsets.symmetric(
+                            vertical: 10,
+                            horizontal: 30
+                          ),
+                          decoration: BoxDecoration(
+                            color:  Selectedindex==index ?Color.fromRGBO(58, 75, 149, 1) :Colors.white,
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(
+                              color: Selectedindex==index ? Color.fromARGB(255, 230, 229, 229):Colors.white,
+                              width: Selectedindex==index? 5 : 1
+                            )
+                          ),
+                          child: Column(
+                            children:  [
+                              Text(
+                                bloodgroups[index],
+                                style: TextStyle(
+                                  color: Selectedindex ==index ? Colors.white : Color.fromRGBO(58, 75, 149, 1),
+                                  fontSize: 18,
+                                  fontFamily: "Sofia Pro",
+                                  fontWeight: FontWeight.w500
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                    ),
+                    ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                 RichText(text: TextSpan(
+                  children: [
+                    TextSpan(
+                      text: bloodgroups[Selectedindex],
+                      style: TextStyle(
+                        color: Color.fromRGBO(58, 75, 149, 1),
+                        fontSize: 160,
+                        fontFamily: "Sofia Pro",
+                        fontWeight: FontWeight.w500
+                      )
+                    ),
+                    WidgetSpan(
+                      child: Transform.translate(
+                        offset: const Offset(0.0, -10.0),
+                        child: Text(
+                          RhesusFactors[SelectedRhesus],
+                          style: const TextStyle(
+                            fontSize: 100,
+                            fontFamily: "Sofia Pro",
+                        fontWeight: FontWeight.w500,
+                        color:  Color(0xFFB5E255)
+                            ),
+                        ),
+                      ),
+                    ),
+                  ]
+                 ),
+                 ),
+                const SizedBox(height: 20,),
+                Row(
+                  children: [
+                    GestureDetector(
+                      onTap: (){
+                        setState(() {
+                          SelectedRhesus = 0;
+                        });
+                      },
+                      child: Container(
+                        height: 60,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: SelectedRhesus == 0 ? const Color(0xFFB5E255):Colors.grey
+                        ),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 20,
+                          vertical: 10
+                        ),
+                        child: const Text(
+                          "+",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
                 )
-                 
           ],
         ),
       ),
       bottomNavigationBar: GestureDetector(
+        onTap: (){},
         child: Container(
           margin: const EdgeInsets.symmetric(
             horizontal: 20,
