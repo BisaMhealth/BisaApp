@@ -73,11 +73,11 @@ dependencies:
             url: https://github.com/Aquarius-blake/chatbotB
             ref: main
   page_transition: ^2.1.0
-  # textfield_tags: ^2.0.2
+  textfield_tags: ^3.0.1
   scrollable_positioned_list: ^0.3.8
   # syncfusion_flutter_gauges: ^24.2.8
   syncfusion_flutter_datepicker: ^24.2.8
-  textfield_tags: ^3.0.0
+  # textfield_tags: ^3.0.0
   # flutter_inappwebview: ^5.7.2+3
 
 dev_dependencies:
