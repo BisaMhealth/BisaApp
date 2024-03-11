@@ -173,6 +173,7 @@ class _Intro_DOBState extends State<Intro_DOB> {
               fontFamily: "Sofia Pro",
               fontWeight: FontWeight.w500
             ),
+            textAlign: TextAlign.center,
             ),
         ),
       ),);

@@ -130,32 +130,35 @@ bool checkvalue = false;
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Row(
-                                        children: [
-                                          Icon(
-                                            index == 0? Icons.female : Icons.male
+                                      Container(
+                                        width: 250,
+                                        child: Row(
+                                          children: [
+                                            Icon(
+                                              index == 0? Icons.female : Icons.male
+                                              ),
+                                            Text(
+                                            index == 0? "Female" : "Male",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                                            
                                             ),
-                                          Text(
-                                          index == 0? "Female" : "Male",
-                                          style: TextStyle(
-                                            color: Colors.white,
-                    
-                                          ),
+                                              ),
+                                              Expanded(child: SizedBox()),
+                                               Checkbox(
+                                                                             activeColor: Color.fromARGB(255, 51, 211, 75),
+                                                                             value:index!=1 ? checkvalue: !checkvalue, 
+                                                                             onChanged: (check){
+                                                                             setState(() {
+                                        if(check!= null){
+                                          checkvalue = !check;
+                                        }
+                                        //checkvalue = check!;
+                                                                             });
+                                            }
                                             ),
-                                            Expanded(child: SizedBox()),
-                                             Checkbox(
-                                     activeColor: Color.fromARGB(255, 51, 211, 75),
-                                     value:index!=1 ? checkvalue: !checkvalue, 
-                                     onChanged: (check){
-                                     setState(() {
-                                      if(check!= null){
-                                        checkvalue = !check;
-                                      }
-                                      //checkvalue = check!;
-                                     });
-                                          }
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
                                       Expanded(
                                         child: Container(

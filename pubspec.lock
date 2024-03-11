@@ -1154,10 +1154,10 @@ packages:
     dependency: "direct main"
     description:
       name: textfield_tags
-      sha256: d1f2204114157a1296bb97c20d7f8c8c7fd036212812afb2e19de7bb34acc55b
+      sha256: "4295bcb2844022356b3808a4e5bc355e1ba8405e6a2028165863c55e9085e1eb"
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.1"
+    version: "2.1.1"
   transparent_image:
     dependency: "direct main"
     description:
