@@ -1,6 +1,9 @@
 
 
+import 'package:bisa_app/animation/PageTransition.dart';
+import 'package:bisa_app/ui/home/Intro_Screens/Allergies.dart';
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 
 class Intro_Bloodtype extends StatefulWidget {
   const Intro_Bloodtype({super.key});
@@ -36,7 +39,7 @@ class _Intro_BloodtypeState extends State<Intro_Bloodtype> {
                 child: Row(
                   children: [
                     Container(
-                      padding: const EdgeInsets.all(5),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(10),
@@ -54,7 +57,7 @@ class _Intro_BloodtypeState extends State<Intro_Bloodtype> {
                     Container(
                       width: MediaQuery.of(context).size.width * 0.5,
                       child: LinearProgressIndicator(
-                        value: 0.2,
+                        value: 0.7,
                         valueColor: AlwaysStoppedAnimation<Color>(Color.fromARGB(255, 24, 44, 116)),
                         backgroundColor: Color.fromARGB(255, 24, 44, 116).withOpacity(0.1),
                       ),
@@ -123,7 +126,7 @@ class _Intro_BloodtypeState extends State<Intro_Bloodtype> {
                     ),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 60,
                 ),
                  RichText(text: TextSpan(
                   children: [
@@ -153,7 +156,7 @@ class _Intro_BloodtypeState extends State<Intro_Bloodtype> {
                   ]
                  ),
                  ),
-                const SizedBox(height: 20,),
+                const SizedBox(height: 80,),
                 Row(
                   children: [
                     GestureDetector(
@@ -164,19 +167,51 @@ class _Intro_BloodtypeState extends State<Intro_Bloodtype> {
                       },
                       child: Container(
                         height: 60,
+                        width: 150,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: SelectedRhesus == 0 ? const Color(0xFFB5E255):Colors.grey
+                          color: SelectedRhesus == 0 ? const Color(0xFFB5E255):Colors.grey.withOpacity(0.2)
                         ),
                         padding: const EdgeInsets.symmetric(
                           horizontal: 20,
                           vertical: 10
                         ),
-                        child: const Text(
-                          "+",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
+                        child: Center(
+                          child:  Text(
+                            RhesusFactors[0],
+                            style:  TextStyle(
+                              color: SelectedRhesus == 0 ? Colors.white:Color.fromRGBO(58, 75, 149, 1),
+                              fontSize: 30,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    const Expanded(child: SizedBox()),
+                    GestureDetector(
+                      onTap: (){
+                        setState(() {
+                          SelectedRhesus = 1;
+                        });
+                      },
+                      child: Container(
+                        height: 60,
+                        width: 150,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: SelectedRhesus == 1 ? const Color(0xFFB5E255):Colors.grey.withOpacity(0.2)
+                        ),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 20,
+                          vertical: 10
+                        ),
+                        child: Center(
+                          child:  Text(
+                            RhesusFactors[1],
+                            style:  TextStyle(
+                              color: SelectedRhesus == 1 ? Colors.white:Color.fromRGBO(58, 75, 149, 1),
+                              fontSize: 30,
+                            ),
                           ),
                         ),
                       ),
@@ -187,7 +222,9 @@ class _Intro_BloodtypeState extends State<Intro_Bloodtype> {
         ),
       ),
       bottomNavigationBar: GestureDetector(
-        onTap: (){},
+        onTap: (){
+          PageAnimateNoRep(context, PageTransitionType.rightToLeft, Intro_Allergies());
+        },
         child: Container(
           margin: const EdgeInsets.symmetric(
             horizontal: 20,
