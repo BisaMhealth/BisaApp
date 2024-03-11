@@ -1,7 +1,10 @@
 
 
+import 'package:bisa_app/animation/PageTransition.dart';
+import 'package:bisa_app/ui/home/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:material_tag_editor/tag_editor.dart';
+import 'package:page_transition/page_transition.dart';
 
 class Intro_Allergies extends StatefulWidget {
   const Intro_Allergies({super.key});
@@ -257,7 +260,9 @@ class _Intro_AllergiesState extends State<Intro_Allergies> {
         ),
       ),
       bottomNavigationBar: GestureDetector(
-        onTap: (){},
+        onTap: (){
+          PageAnimateNoRep(context, PageTransitionType.rightToLeft, HomePage());
+        },
         child: Container(
           margin: const EdgeInsets.symmetric(
             horizontal: 20,
