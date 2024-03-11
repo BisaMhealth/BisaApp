@@ -57,7 +57,7 @@ class _Intro_BloodtypeState extends State<Intro_Bloodtype> {
                     Container(
                       width: MediaQuery.of(context).size.width * 0.5,
                       child: LinearProgressIndicator(
-                        value: 0.7,
+                        value: 0.9,
                         valueColor: AlwaysStoppedAnimation<Color>(Color.fromARGB(255, 24, 44, 116)),
                         backgroundColor: Color.fromARGB(255, 24, 44, 116).withOpacity(0.1),
                       ),

@@ -64,7 +64,7 @@ class _Intro_DOBState extends State<Intro_DOB> {
                     Container(
                       width: MediaQuery.of(context).size.width * 0.5,
                       child: LinearProgressIndicator(
-                        value: 0.2,
+                        value: 0.8,
                         valueColor: AlwaysStoppedAnimation<Color>(Color.fromARGB(255, 24, 44, 116)),
                         backgroundColor: Color.fromARGB(255, 24, 44, 116).withOpacity(0.1),
                       ),

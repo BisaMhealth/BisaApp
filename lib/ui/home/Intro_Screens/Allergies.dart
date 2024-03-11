@@ -1,7 +1,6 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:textfield_tags/textfield_tags.dart';
 import 'package:material_tag_editor/tag_editor.dart';
 
 class Intro_Allergies extends StatefulWidget {
@@ -13,7 +12,6 @@ class Intro_Allergies extends StatefulWidget {
 
 class _Intro_AllergiesState extends State<Intro_Allergies> {
   
-  final _stringTagController = StringTagController();
   List values=[];
 
   @override
@@ -53,7 +51,7 @@ class _Intro_AllergiesState extends State<Intro_Allergies> {
                       Container(
                         width: MediaQuery.of(context).size.width * 0.5,
                         child: LinearProgressIndicator(
-                          value: 0.7,
+                          value: 1.0,
                           valueColor: AlwaysStoppedAnimation<Color>(Color.fromARGB(255, 24, 44, 116)),
                           backgroundColor: Color.fromARGB(255, 24, 44, 116).withOpacity(0.1),
                         ),
