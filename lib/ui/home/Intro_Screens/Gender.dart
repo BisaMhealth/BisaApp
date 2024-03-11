@@ -132,6 +132,9 @@ bool checkvalue = false;
                                     children: [
                                       Row(
                                         children: [
+                                          Icon(
+                                            index == 0? Icons.female : Icons.male
+                                            ),
                                           Text(
                                           index == 0? "Female" : "Male",
                                           style: TextStyle(
@@ -139,6 +142,7 @@ bool checkvalue = false;
                     
                                           ),
                                             ),
+                                            Expanded(child: SizedBox()),
                                              Checkbox(
                                      activeColor: Color.fromARGB(255, 51, 211, 75),
                                      value:index!=1 ? checkvalue: !checkvalue, 

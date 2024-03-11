@@ -56,9 +56,9 @@ class _Intro_AllergiesState extends State<Intro_Allergies> {
                   ],
                 )
                 ),
-                Text(
-                  "What is your official blood type?",
-                   style: const TextStyle(
+              const  Text(
+                  "Do you have any symptoms/allergies",
+                   style:  TextStyle(
                         fontFamily: "Sofia Pro",
                         fontSize: 24,
                         // fontWeight: FontWeight.w500,
@@ -67,7 +67,9 @@ class _Intro_AllergiesState extends State<Intro_Allergies> {
                         ),
                   ),
                 const  SizedBox(height: 10,),
-                
+                Container(
+                  
+                )
                 
           ],
         ),
