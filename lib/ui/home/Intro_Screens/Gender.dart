@@ -61,7 +61,7 @@ bool checkvalue = false;
                     Container(
                       width: MediaQuery.of(context).size.width * 0.5,
                       child: LinearProgressIndicator(
-                        value: 0.2,
+                        value: 0.6,
                         valueColor: AlwaysStoppedAnimation<Color>(Color.fromARGB(255, 24, 44, 116)),
                         backgroundColor: Color.fromARGB(255, 24, 44, 116).withOpacity(0.1),
                       ),
@@ -93,12 +93,12 @@ bool checkvalue = false;
                         ),
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 60,
                   ),
                   Align(
                     alignment: Alignment.center,
                     child: Container(
-                      height: 250,
+                      height: 300,
                       child: ScrollablePositionedList.builder(
                         scrollDirection: Axis.horizontal,
                               itemCount: 2,
@@ -135,7 +135,8 @@ bool checkvalue = false;
                                         child: Row(
                                           children: [
                                             Icon(
-                                              index == 0? Icons.female : Icons.male
+                                              index == 0? Icons.female : Icons.male,
+                                              color: Colors.white,
                                               ),
                                             Text(
                                             index == 0? "Female" : "Male",
@@ -146,6 +147,9 @@ bool checkvalue = false;
                                               ),
                                               Expanded(child: SizedBox()),
                                                Checkbox(
+                                                side: BorderSide(
+                                                  color: Colors.white,
+                                                ),
                                                                              activeColor: Color.fromARGB(255, 51, 211, 75),
                                                                              value:index!=1 ? checkvalue: !checkvalue, 
                                                                              onChanged: (check){

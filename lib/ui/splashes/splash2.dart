@@ -32,7 +32,7 @@ class _Splash2State extends State<Splash2> {
                     Container(
                       width: MediaQuery.of(context).size.width * 0.5,
                       child: LinearProgressIndicator(
-                        value: 0.2,
+                        value: 0.3,
                         valueColor: AlwaysStoppedAnimation<Color>(Color.fromARGB(255, 24, 44, 116)),
                         backgroundColor: Color.fromARGB(255, 24, 44, 116).withOpacity(0.1),
                       ),
@@ -68,7 +68,7 @@ class _Splash2State extends State<Splash2> {
           ),
           Container(
             width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height *0.8741,
+            height: (MediaQuery.of(context).size.height *0.8741) - 102,
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/imgs/splash2.png'),

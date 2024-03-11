@@ -71,7 +71,7 @@ class _Splash1State extends State<Splash1> {
           ),
           Container(
             width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height *0.8376623377,
+            height: (MediaQuery.of(context).size.height *0.8376623377) - 72,
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/imgs/splash1.png'),
