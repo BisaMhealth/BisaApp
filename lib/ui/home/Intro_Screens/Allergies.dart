@@ -19,7 +19,7 @@ class _Intro_AllergiesState extends State<Intro_Allergies> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 230, 229, 229),
+      backgroundColor: Color.fromARGB(255, 244, 244, 244),
        body: Container(
         padding: const EdgeInsets.symmetric(
           horizontal: 20
@@ -118,7 +118,7 @@ class _Intro_AllergiesState extends State<Intro_Allergies> {
                         counter: Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
-                            Icon(
+                           const Icon(
                               Icons.receipt,
                               color: Colors.grey,
                             ),
