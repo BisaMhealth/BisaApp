@@ -80,6 +80,8 @@ dependencies:
   material_tag_editor: ^0.1.2
   waterfall_flow: ^3.0.3
   flutter_svg: ^2.0.10+1
+  just_audio: ^0.9.36
+  audio_service: ^0.18.12
   # textfield_tags: ^3.0.0
   # flutter_inappwebview: ^5.7.2+3
 
