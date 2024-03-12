@@ -198,15 +198,16 @@ class MyAppState extends State<MyApp> {
                   },
                 ));
           },
-           home: Splash1(),
-         // initialRoute: '/splash',
+           //home: Splash1(),
+          initialRoute: '/splash',
           routes: {
             '/onboarding': (context) => const OnBoarding(),
             '/action': (context) => const ConfirmForm(),
             '/chat': (context) => const ChatListScreen(),
             '/login': (context) => const LoginPage(),
             '/splash': (context) => const Splash(),
-            '/home': (context) => const HomePage()
+            '/home': (context) => const HomePage(),
+            '/splash1': (context) => const Splash1(),
           },
         );
       },

@@ -1,5 +1,7 @@
  List<String> keywords = [
-  'do you do'
+  'not feeling well',
+  'feeling sick',
+  'do you do',
   'can you do',
   'greetings',
   'good morning',
@@ -27,6 +29,8 @@
 ];
 
  List<String> responses = [
+  'Sorry to hear that, Which of the following categories would you categorize your condition as: \nGeneral Health \nPregnancy \nCovid-19 \nSexual Health \nHIV \nChild Health \nNutrition \nOthers',
+  'Sorry to hear that, Which of the following categories would you categorize your condition as: \nGeneral Health \nPregnancy \nCovid-19 \nSexual Health \nHIV \nChild Health \nNutrition \nOthers',
   'I can tell a joke, refer you to a doctor if necessary and I\'m also available for a quick chat',
   'I can tell a joke, refer you to a doctor if necessary and I\'m also available for a quick chat',
   'Greetings! How can I be of service?',
@@ -35,7 +39,7 @@
   'Bisa is a Tech company which provides IT solutions by creating top quality yet affordable, advanced software, specifically designed to meet the unique needs of its clients. The company is committed to building and developing technological solutions that ensure the continued competitiveness of businesses. Oasis Websoft also strives to keep the character of its software such that its ability to transform is clearly evidenced by persistent growth in every aspect of business.I am a bot created by bisa Technologies to assist with your health related.How can I be of service?',
   'No Comments.',
   'No worries.How else can I assist you?',
-  'hey, how are you today?',
+  'hey, how are you feeling today?',
   'Sure, I\'m always availabe here :)',
   'Understood. is there anything else you would like to share? if not you can tap the top chat icon to speak to a doctor',
   'Sure, I\'m always availabe here :) ',
@@ -51,5 +55,5 @@
   'I\'m here to assist you, not to express my personal feelings.',
   'I don\'t experience time, so I don\'t know the latest news.',
   'They say laughter is the best medicine. but if you laugh too much, you might need medicine. 😂',
-  'Glad to see you happy :)'
+  'Glad to see you happy :)',
 ];

@@ -146,7 +146,7 @@ class SplashState extends State<Splash> with TickerProviderStateMixin {
       await Future.delayed(const Duration(milliseconds: 3000), () {
         Navigator.pop(context);
         // Navigator.pushNamed(context, '/signin');
-        Navigator.pushNamed(context, '/onboarding');
+        Navigator.pushNamed(context, '/splash1');
       });
     }
   }
