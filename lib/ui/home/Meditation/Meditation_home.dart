@@ -15,8 +15,13 @@ class MeditationHome extends StatefulWidget {
 
 class _MeditationHomeState extends State<MeditationHome> {
 
-  List images = ['assets/imgs/focus.png','','',''];
-  List titles = ['Focus','','',''];
+  List images = ['assets/imgs/focus.png','assets/imgs/happiness.png','assets/imgs/growth.png','assets/imgs/focus.png'];
+  List titles = ['Focus','Happiness','Personal\nGrowth',''];
+  List Colrs = [Color.fromARGB(255, 201, 138, 214),
+                Color.fromARGB(255, 233, 147, 26),
+                Colors.transparent,
+                Color.fromARGB(255, 201, 138, 214),
+                   ];
 
 
   @override
@@ -78,7 +83,8 @@ class _MeditationHomeState extends State<MeditationHome> {
       itemBuilder: (BuildContext context, int index) {
         return Meditation_Card(
           title: titles[index],
-          image: images[0],
+          image: images[index],
+          color: Colrs[index],
         );
       },
     )
