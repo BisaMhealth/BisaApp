@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class Meditation_Card extends StatelessWidget {
   final String title;
@@ -31,10 +30,6 @@ class Meditation_Card extends StatelessWidget {
                 fit: BoxFit.fill
               )
             ),
-            // child: SvgPicture.asset(
-            //   image,
-            //   fit: BoxFit.cover,
-            //   ),
             child:Padding(
               padding: const EdgeInsets.only(
                 top: 70,
