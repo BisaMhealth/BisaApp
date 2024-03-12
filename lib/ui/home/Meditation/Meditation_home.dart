@@ -15,12 +15,14 @@ class MeditationHome extends StatefulWidget {
 
 class _MeditationHomeState extends State<MeditationHome> {
 
-  List images = ['assets/imgs/focus.png','assets/imgs/happiness.png','assets/imgs/growth.png','assets/imgs/performance.png'];
-  List titles = ['Focus','Happiness','Personal\nGrowth',''];
+  List images = ['assets/imgs/focus.png','assets/imgs/happiness.png','assets/imgs/growth.png','assets/imgs/performance.png','assets/imgs/anxiety.png','assets/imgs/stress.png'];
+  List titles = ['Focus','Happiness','Personal\nGrowth','Performance\nBoost','Relieve\n Anxiety','Relieve\nStress'];
   List Colrs = [Color.fromARGB(255, 201, 138, 214),
                 Color.fromARGB(255, 233, 147, 26),
                 Colors.transparent,
-                Color.fromARGB(255, 220, 78, 16),
+                Color.fromARGB(255, 244, 85, 57).withOpacity(0.8),
+                Color.fromARGB(255, 245, 214, 39),
+                Color.fromARGB(255, 177, 138, 237),
                    ];
 
 
