@@ -28,7 +28,7 @@ class Meditation_Card extends StatelessWidget {
               color: color,
               image: DecorationImage(
                 image: AssetImage(image),
-                fit: BoxFit.cover
+                fit: BoxFit.fill
               )
             ),
             // child: SvgPicture.asset(
