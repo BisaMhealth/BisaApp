@@ -1,9 +1,12 @@
 
 
 import 'package:bisa_app/animation/fade_animation.dart';
+import 'package:bisa_app/ui/home/Meditation/Meditating_screen.dart';
 import 'package:bisa_app/ui/home/Meditation/Meditation_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:page_animation_transition/animations/fade_animation_transition.dart';
+import 'package:page_animation_transition/page_animation_transition.dart';
 import 'package:waterfall_flow/waterfall_flow.dart';
 
 class MeditationHome extends StatefulWidget {
@@ -83,10 +86,22 @@ class _MeditationHomeState extends State<MeditationHome> {
       ),
       itemCount: images.length,
       itemBuilder: (BuildContext context, int index) {
-        return Meditation_Card(
-          title: titles[index],
-          image: images[index],
-          color: Colrs[index],
+        return InkWell(
+          onTap: (){
+            Navigator.push(
+                      context,
+                      PageAnimationTransition(
+                        pageAnimationType:
+                            FadeAnimationTransition(),
+                        page: Meditating_Screen(),
+                      ),
+                    );
+          },
+          child: Meditation_Card(
+            title: titles[index],
+            image: images[index],
+            color: Colrs[index],
+          ),
         );
       },
     )
