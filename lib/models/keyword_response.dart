@@ -25,12 +25,20 @@
   'are you angry',
   'latest news',
   '😂😂😂',
-  '😂😂'
+  '😂😂',
+  'general health',
+  'pregnancy',
+  'covid-19',
+  'sexual health'
+  'HIV',
+  'child health',
+  'nutrition',
+  'other'
 ];
 
  List<String> responses = [
-  'Sorry to hear that, Which of the following categories would you categorize your condition as: \nGeneral Health \nPregnancy \nCovid-19 \nSexual Health \nHIV \nChild Health \nNutrition \nOthers',
-  'Sorry to hear that, Which of the following categories would you categorize your condition as: \nGeneral Health \nPregnancy \nCovid-19 \nSexual Health \nHIV \nChild Health \nNutrition \nOthers',
+  'Sorry to hear that, Which of the following categories would you categorize your condition as: \nGeneral Health \nPregnancy \nCovid-19 \nSexual Health \nHIV \nChild Health \nNutrition \nOther',
+  'Sorry to hear that, Which of the following categories would you categorize your condition as: \nGeneral Health \nPregnancy \nCovid-19 \nSexual Health \nHIV \nChild Health \nNutrition \nOther',
   'I can tell a joke, refer you to a doctor if necessary and I\'m also available for a quick chat',
   'I can tell a joke, refer you to a doctor if necessary and I\'m also available for a quick chat',
   'Greetings! How can I be of service?',
@@ -56,4 +64,12 @@
   'I don\'t experience time, so I don\'t know the latest news.',
   'They say laughter is the best medicine. but if you laugh too much, you might need medicine. 😂',
   'Glad to see you happy :)',
+  'Understood, could you please tell me more about your current condition? or would you like to be referred to a doctor?',
+  'Understood, could you please tell me more about your current condition? or would you like to be referred to a doctor?',
+  'Sorry to here that, could you tell me more about your current condition? or would you like to be referred to a doctor?',
+  'Sorry to here that, could you tell me more about your current condition? or would you like to be referred to a doctor?',
+  'Sorry to here that, could you tell me more about your current condition? or would you like to be referred to a doctor?',
+  'Understood, could you please tell me more about your current condition? or would you like to be referred to a doctor?',
+  'Understood, could you please tell me more about your current condition? or would you like to be referred to a doctor?',
+  'Understood, could you please tell me more about your current condition? or would you like to be referred to a doctor?',
 ];

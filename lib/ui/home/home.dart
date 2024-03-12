@@ -4,6 +4,7 @@ import 'package:bisa_app/models/current_user.dart';
 import 'package:bisa_app/providers/current_user_provider.dart';
 import 'package:bisa_app/services/api_service.dart';
 import 'package:bisa_app/ui/chat/start_question.dart';
+import 'package:bisa_app/ui/home/Meditation/Meditation_home.dart';
 import 'package:bisa_app/ui/home/covid_page/main.dart';
 import 'package:bisa_app/ui/vaccination/testing_region.dart';
 import 'package:bisa_app/ui/vaccination/vaccine_home.dart';
@@ -184,6 +185,52 @@ class HomeState extends State<Home> with SingleTickerProviderStateMixin {
                               SizedBox(
                                 width: 8.w,
                               ),
+                              //meditate
+                              InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    PageAnimationTransition(
+                                      pageAnimationType:
+                                          FadeAnimationTransition(),
+                                      page: const MeditationHome(),
+                                    ),
+                                  );
+                                },
+                                child: Container(
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.27,
+                                  height: 120.h,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(15),
+                                  ),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Image.asset('assets/imgs/med2.png',
+                                          height: 55.h, fit: BoxFit.cover),
+                                      SizedBox(
+                                        height: 10.h,
+                                      ),
+                                      Text(
+                                        ' Meditation',
+                                        style: TextStyle(
+                                          fontFamily: 'Poppins',
+                                          fontWeight: FontWeight.w600,
+                                          fontSize: 14.sp,
+                                          color: const Color.fromRGBO(
+                                              92, 94, 86, 1),
+                                        ),
+                                        textAlign: TextAlign.center,
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 8.w,
+                              ),
                               //vaccines
                               InkWell(
                                 onTap: () {
@@ -213,7 +260,7 @@ class HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                         height: 15.h,
                                       ),
                                       Text(
-                                        ' Vaccination Centers',
+                                        ' Pharmacy',
                                         style: TextStyle(
                                           fontFamily: 'Poppins',
                                           fontWeight: FontWeight.w600,
@@ -259,7 +306,7 @@ class HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                         height: 15.h,
                                       ),
                                       Text(
-                                        ' Testing\nCenters',
+                                        ' Labs',
                                         style: TextStyle(
                                           fontFamily: 'Poppins',
                                           fontWeight: FontWeight.w600,
@@ -799,35 +846,35 @@ class HomeState extends State<Home> with SingleTickerProviderStateMixin {
                       height: 10.h,
                     ),
                     //video
-                    FadeAnimation(
-                      1.6,
-                      -30,
-                      0,
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Text(
-                              'Video',
-                              style: TextStyle(
-                                fontFamily: 'Poppins',
-                                fontWeight: FontWeight.w600,
-                                fontSize: 17.sp,
-                                color: const Color.fromRGBO(99, 93, 93, 0.98),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      child:Card(
-                        child:  YoutubePlayerIFrame(
-                                      controller: controller
-                                    ),
-                      )
-                    ),
+                    // FadeAnimation(
+                    //   1.6,
+                    //   -30,
+                    //   0,
+                    //   Row(
+                    //     mainAxisAlignment: MainAxisAlignment.start,
+                    //     children: [
+                    //       Padding(
+                    //         padding: const EdgeInsets.all(8.0),
+                    //         child: Text(
+                    //           'Video',
+                    //           style: TextStyle(
+                    //             fontFamily: 'Poppins',
+                    //             fontWeight: FontWeight.w600,
+                    //             fontSize: 17.sp,
+                    //             color: const Color.fromRGBO(99, 93, 93, 0.98),
+                    //           ),
+                    //         ),
+                    //       ),
+                    //     ],
+                    //   ),
+                    // ),
+                    // Container(
+                    //   child:Card(
+                    //     child:  YoutubePlayerIFrame(
+                    //                   controller: controller
+                    //                 ),
+                    //   )
+                    // ),
                     SizedBox(
                       height: 85.h,
                     ),
