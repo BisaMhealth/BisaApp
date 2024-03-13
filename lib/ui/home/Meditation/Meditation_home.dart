@@ -33,8 +33,10 @@ class _MeditationHomeState extends State<MeditationHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
         child: SingleChildScrollView(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(height: 50,),
                Center(
@@ -71,7 +73,22 @@ class _MeditationHomeState extends State<MeditationHome> {
                         ),
                       ),
                ),
-               SizedBox(height: 20,),
+               const SizedBox(height: 20,),
+               FadeAnimation(
+                1.2,
+                0,
+                30, 
+                Text(
+                  "Choose an atmosphere",
+                  style: TextStyle(
+                 fontFamily: 'Poppins',
+                 fontSize: 14.sp,
+                 color:  Colors.black,
+                 ),
+                 textAlign: TextAlign.left,
+               ),
+               ),
+               const SizedBox(height: 20,),
                WaterfallFlow.builder(
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
