@@ -113,7 +113,10 @@ class _MeditationHomeState extends State<MeditationHome> {
                       PageAnimationTransition(
                         pageAnimationType:
                             FadeAnimationTransition(),
-                        page: Meditating_Screen(index: index,),
+                        page: Meditating_Screen(
+                          index: index,
+                          title: titles[index],
+                          ),
                       ),
                     );
           },
@@ -132,13 +135,15 @@ class _MeditationHomeState extends State<MeditationHome> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: GestureDetector(
         onTap: (){
+          var index = random.nextInt(5);
           Navigator.push(
                       context,
                       PageAnimationTransition(
                         pageAnimationType:
                             FadeAnimationTransition(),
                         page: Meditating_Screen(
-                          index: random.nextInt(5),
+                          index: index,
+                          title: titles[index],
                         ),
                       ),
                     );
