@@ -2,7 +2,8 @@
 import 'package:flutter/material.dart';
 
 class Meditating_Screen extends StatefulWidget {
-  const Meditating_Screen({super.key});
+  final int index;
+  const Meditating_Screen({super.key,required this.index});
 
   @override
   State<Meditating_Screen> createState() => _Meditating_ScreenState();

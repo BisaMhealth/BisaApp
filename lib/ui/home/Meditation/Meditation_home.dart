@@ -1,5 +1,7 @@
 
 
+import 'dart:math';
+
 import 'package:bisa_app/animation/fade_animation.dart';
 import 'package:bisa_app/ui/home/Meditation/Meditating_screen.dart';
 import 'package:bisa_app/ui/home/Meditation/Meditation_card.dart';
@@ -18,6 +20,7 @@ class MeditationHome extends StatefulWidget {
 
 class _MeditationHomeState extends State<MeditationHome> {
 
+  Random random = Random();
   List images = ['assets/imgs/focus.png','assets/imgs/happiness.png','assets/imgs/growth.png','assets/imgs/performance.png','assets/imgs/anexiety.png','assets/imgs/stress.png'];
   List titles = ['Focus','Happiness','Personal\nGrowth','Performance\nBoost','Relieve\n Anxiety','Relieve\nStress'];
   List Colrs = [Color.fromARGB(255, 201, 138, 214),
@@ -91,7 +94,7 @@ class _MeditationHomeState extends State<MeditationHome> {
                const SizedBox(height: 20,),
                WaterfallFlow.builder(
       shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
+    //  physics: const NeverScrollableScrollPhysics(),
       padding: const EdgeInsets.symmetric(
         horizontal: 10,
         vertical: 10,
@@ -110,7 +113,7 @@ class _MeditationHomeState extends State<MeditationHome> {
                       PageAnimationTransition(
                         pageAnimationType:
                             FadeAnimationTransition(),
-                        page: Meditating_Screen(),
+                        page: Meditating_Screen(index: index,),
                       ),
                     );
           },
@@ -126,6 +129,49 @@ class _MeditationHomeState extends State<MeditationHome> {
           ),
         ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: GestureDetector(
+        onTap: (){
+          Navigator.push(
+                      context,
+                      PageAnimationTransition(
+                        pageAnimationType:
+                            FadeAnimationTransition(),
+                        page: Meditating_Screen(
+                          index: random.nextInt(5),
+                        ),
+                      ),
+                    );
+        },
+        child: Container(
+          height: 50,
+          width: 200,
+          margin: const EdgeInsets.only(bottom: 10),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(30),
+            boxShadow: [
+              BoxShadow(
+                color: Color(0xFFB5E255),
+                spreadRadius: 1,
+                blurRadius: 2,
+                offset: const Offset(0, 2), // changes position of shadow
+              ),
+            ],
+          ),
+          child:const Center(
+            child: Text(
+              "Surprise Me",
+              style: TextStyle(
+              color: Colors.black,
+              fontSize: 16,
+              fontWeight: FontWeight.w600
+            ),
+            textAlign: TextAlign.center,
+            ),
+          )
+        ),
+      )
     );
   }
 }
