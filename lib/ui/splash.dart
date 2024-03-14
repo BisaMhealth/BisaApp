@@ -98,7 +98,7 @@ class SplashState extends State<Splash> with TickerProviderStateMixin {
                                   'assets/imgs/bisa_icon.png',
                                 ),
                                const Text(
-                                "Healthcare at your fingertips",
+                                "Healthcare at your\n fingertips",
                                     style: TextStyle(
                                         fontFamily: 'Poppins',
                                         fontSize: 17,

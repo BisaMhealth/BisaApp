@@ -2,6 +2,7 @@
 
 import 'package:bisa_app/animation/PageTransition.dart';
 import 'package:bisa_app/ui/home/Intro_Screens/Weight.dart';
+import 'package:bisa_app/ui/login/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
@@ -67,7 +68,14 @@ bool checkvalue = false;
                       ),
                     ),
                    const Expanded(child: SizedBox()),
-                    TextButton(onPressed: (){}, child: Text("Skip"))
+                    TextButton(
+                      onPressed: (){
+                        PagetransAnimate(context, PageTransitionType.rightToLeft, LoginPage());
+                      }, 
+                      child: Text(
+                        "Skip",
+                        )
+                      )
                   ],
                 )
                 ),

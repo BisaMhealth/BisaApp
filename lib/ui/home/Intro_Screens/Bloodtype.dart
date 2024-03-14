@@ -2,6 +2,7 @@
 
 import 'package:bisa_app/animation/PageTransition.dart';
 import 'package:bisa_app/ui/home/Intro_Screens/Allergies.dart';
+import 'package:bisa_app/ui/login/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
@@ -63,7 +64,14 @@ class _Intro_BloodtypeState extends State<Intro_Bloodtype> {
                       ),
                     ),
                    const Expanded(child: SizedBox()),
-                    TextButton(onPressed: (){}, child: Text("Skip"))
+                    TextButton(
+                      onPressed: (){
+                        PagetransAnimate(context, PageTransitionType.rightToLeft, LoginPage());
+                      }, 
+                      child: Text(
+                        "Skip"
+                        )
+                      )
                   ],
                 )
                 ),

@@ -2,7 +2,7 @@
 
 import 'package:bisa_app/animation/PageTransition.dart';
 import 'package:bisa_app/ui/home/Intro_Screens/Bloodtype.dart';
-import 'package:bisa_app/ui/home/Intro_Screens/Weight.dart';
+import 'package:bisa_app/ui/login/login_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -70,7 +70,14 @@ class _Intro_DOBState extends State<Intro_DOB> {
                       ),
                     ),
                    const Expanded(child: SizedBox()),
-                    TextButton(onPressed: (){}, child: Text("Skip"))
+                    TextButton(
+                      onPressed: (){
+                        PagetransAnimate(context, PageTransitionType.rightToLeft, LoginPage());
+                      }, 
+                      child: Text(
+                        "Skip",
+                        )
+                      )
                   ],
                 )
                 ),

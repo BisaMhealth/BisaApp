@@ -1,5 +1,6 @@
 
 import 'package:bisa_app/animation/PageTransition.dart';
+import 'package:bisa_app/ui/login/login_page.dart';
 import 'package:bisa_app/ui/splashes/splash4.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
@@ -39,7 +40,14 @@ class _Splash3State extends State<Splash3> {
                       ),
                     ),
                    const Expanded(child: SizedBox()),
-                    TextButton(onPressed: (){}, child: Text("Skip"))
+                    TextButton(
+                      onPressed: (){
+                        PagetransAnimate(context, PageTransitionType.rightToLeft, LoginPage());
+                      }, 
+                      child: Text(
+                        "Skip"
+                        )
+                        )
                   ],
                 )
                 ),
