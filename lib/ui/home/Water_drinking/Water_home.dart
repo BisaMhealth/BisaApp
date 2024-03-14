@@ -11,6 +11,36 @@ class WaterHome extends StatefulWidget {
 class _WaterHomeState extends State<WaterHome> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 137, 211, 245),
+      appBar: AppBar(
+        backgroundColor: Colors.lightBlueAccent,
+        elevation: 0.0,
+        centerTitle: true,
+        surfaceTintColor: Colors.transparent,
+        leading:  GestureDetector(
+          onTap: (){
+            Navigator.pop(context);
+          },
+          child: Container(
+                        padding: const EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                          color: Colors.transparent,
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: const Icon(
+                          Icons.arrow_back_ios_outlined,
+                          color: Colors.white,
+                        ),
+                      ),
+        ),
+        title: Text(
+          'Hydration',
+          style: TextStyle(
+            color: Colors.white,
+          ),
+          ),
+      ),
+    );
   }
 }

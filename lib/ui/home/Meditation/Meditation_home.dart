@@ -35,13 +35,34 @@ class _MeditationHomeState extends State<MeditationHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        //toolbarHeight: 20,
+        leading: GestureDetector(
+          onTap: (){
+            Navigator.pop(context);
+          },
+          child: Container(
+                        padding: const EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: const Icon(
+                          Icons.arrow_back_ios_outlined,
+                          color: Color.fromRGBO(58, 75, 149, 1),
+                        ),
+                      ),
+        ),
+        backgroundColor: Colors.white,
+        elevation: 0.0,
+      ),
       body: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 2),
+        color: Colors.white,
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 50,),
                Center(
                  child: FadeAnimation(
                         1.2,

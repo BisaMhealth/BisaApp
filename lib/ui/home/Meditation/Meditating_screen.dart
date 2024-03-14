@@ -97,10 +97,50 @@ final _player = AudioPlayer();
     }
   );
   try {
-    _player.setAudioSource(
+    switch (widget.index) {
+      case 0:
+        _player.setAudioSource(
     //  AudioSource.asset('assets/songs/happy.mp3')
     AudioSource.uri(Uri.parse('https://res.cloudinary.com/dzh1cgxjd/video/upload/v1710349509/BisaMeditationAudio/1_Hour_Upbeat_Background_Music_Best_MBB_Music_Collection_Free_Download_No_Copyright_wcqfqo.mp3'))
     );
+        break;
+      case 1:
+        _player.setAudioSource(
+    //  AudioSource.asset('assets/songs/happy.mp3')
+    AudioSource.uri(Uri.parse('https://res.cloudinary.com/dzh1cgxjd/video/upload/v1710349509/BisaMeditationAudio/1_Hour_Upbeat_Background_Music_Best_MBB_Music_Collection_Free_Download_No_Copyright_wcqfqo.mp3'))
+    );
+        break;
+      case 2:
+        _player.setAudioSource(
+    //  AudioSource.asset('assets/songs/happy.mp3')
+    AudioSource.uri(Uri.parse('https://res.cloudinary.com/dzh1cgxjd/video/upload/v1710349509/BisaMeditationAudio/1_Hour_Upbeat_Background_Music_Best_MBB_Music_Collection_Free_Download_No_Copyright_wcqfqo.mp3'))
+    );
+        break;
+      case 3:
+        _player.setAudioSource(
+    //  AudioSource.asset('assets/songs/happy.mp3')
+    AudioSource.uri(Uri.parse('https://res.cloudinary.com/dzh1cgxjd/video/upload/v1710349509/BisaMeditationAudio/1_Hour_Upbeat_Background_Music_Best_MBB_Music_Collection_Free_Download_No_Copyright_wcqfqo.mp3'))
+    );
+        break;
+      case 4:
+        _player.setAudioSource(
+    //  AudioSource.asset('assets/songs/happy.mp3')
+    AudioSource.uri(Uri.parse('https://res.cloudinary.com/dzh1cgxjd/video/upload/v1710349509/BisaMeditationAudio/1_Hour_Upbeat_Background_Music_Best_MBB_Music_Collection_Free_Download_No_Copyright_wcqfqo.mp3'))
+    );
+        break;
+      case 5:
+        _player.setAudioSource(
+    //  AudioSource.asset('assets/songs/happy.mp3')
+    AudioSource.uri(Uri.parse('https://res.cloudinary.com/dzh1cgxjd/video/upload/v1710349509/BisaMeditationAudio/1_Hour_Upbeat_Background_Music_Best_MBB_Music_Collection_Free_Download_No_Copyright_wcqfqo.mp3'))
+    );
+        break;
+    
+      default:
+      _player.setAudioSource(
+    //  AudioSource.asset('assets/songs/happy.mp3')
+    AudioSource.uri(Uri.parse('https://res.cloudinary.com/dzh1cgxjd/video/upload/v1710349509/BisaMeditationAudio/1_Hour_Upbeat_Background_Music_Best_MBB_Music_Collection_Free_Download_No_Copyright_wcqfqo.mp3'))
+    );
+    }
   } catch (e) {
     print("Error Loading audio source: ${e.toString()}"); 
   }

@@ -104,7 +104,8 @@ class SplashState extends State<Splash> with TickerProviderStateMixin {
                                         fontSize: 17,
                                         fontWeight: FontWeight.bold,
                                         color: Colors.black,
-                                        )
+                                        ),
+                                        textAlign: TextAlign.center,
                                         ),
                               ],
                             )
