@@ -1,4 +1,4 @@
-# Bisa Health App - Web Frontend
+# Bisa Health App - Web and Mobile Health Application
 
 > ### This is the complete Web Frontend for the Bisa Mobile App
 
