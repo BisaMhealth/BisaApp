@@ -22,7 +22,7 @@ class _Intro_WeightState extends State<Intro_Weight> {
 final ScrollOffsetController scrollOffsetController = ScrollOffsetController();
 final ItemPositionsListener itemPositionsListener = ItemPositionsListener.create();
 final ScrollOffsetListener scrollOffsetListener = ScrollOffsetListener.create();
-double weight= 50;
+double weight = 5;
  //late LinearMarkerPointer pointer;
 
 @override

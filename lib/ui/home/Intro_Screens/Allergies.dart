@@ -267,7 +267,7 @@ class _Intro_AllergiesState extends State<Intro_Allergies> {
       ),
       bottomNavigationBar: GestureDetector(
         onTap: (){
-          PageAnimateNoRep(context, PageTransitionType.rightToLeft, HomePage());
+          PageAnimateNoRep(context, PageTransitionType.rightToLeft, LoginPage());
         },
         child: Container(
           margin: const EdgeInsets.symmetric(
