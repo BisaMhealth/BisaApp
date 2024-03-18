@@ -1,63 +1,133 @@
-# Bisa Health
+# Bisa Health App - Web Frontend
 
-Bisa Health is a mobile and web application built to improve access to healthcare services for people in Ghana and other African countries. The application is built with Flutter for the mobile app and Laravel and Vue.js for the web application.
+> ### This is the complete Web Frontend for the Bisa Mobile App
 
-## Features
+The functionality of this rep is complete - Issues encountered can be shared with us.
+----------
 
-- Find healthcare providers near you
-- Book appointments with healthcare providers
-- Chat with healthcare providers in real-time
-- Track your health progress
-- Receive reminders for your health appointments and medications
+- [About](#about-bisa-app)
+- [Requirements](#requirements)
+- [Easy Installation](#easy-installation)
+- [Server Setup](#server-setup)
+    - [Windows Server Setup For Local Deployment](#windows-server-setup-for-local-deployment)
+- [Install Project using Git](#install-project-using-git)
 
-## Installation
+# About Bisa App
+Bisa App is a comprehensive mobile health platform designed to empower users with convenient access to healthcare services and information. With Bisa, users can consult with qualified medical professionals, access personalized health recommendations, and manage their health and wellness goals from the convenience of their smartphones. Our mission is to make quality healthcare accessible and affordable for everyone, leveraging technology to bridge the gap between users and healthcare providers. Join the Bisa community today and take control of your health journey!
+Some key features of Bisa include:
 
-### Mobile App
+-   Chat feature with audio, image and text support
+-   Search for specialists and book video consultations
+-   Search and book for lab tests from listed laboratories
 
-##This repository contains the following branches
 
--Backend(Containing all APIs for both web and mobile), 
--Admin(Which has project files for the Administrator dashboard), 
--Frontend(Which represents the BisaApp web version) and 
--mobile(which contains the mobile app)
+Our platform is open to modifications by developers by its open source nature. With this in mind, the platform is built with the best standards and practices to ensure ease with expanding the code base and making it scalable. Learn more by exploring the documentation or seeing the code in the Github repository.  
 
-To run the Bisa Health mobile app, follow these steps:
+# About this repository
 
-1. Clone the repository to your local machine
-2. Navigate to the `mobile` directory
-3. Run `flutter pub get` to install the app's dependencies
-4. Run `flutter run` to start the app on an emulator or physical device
+### This repository contains all the various parts  of the Bisa Health App, this includes;
+- [Backend](https://github.com/BisaMhealth/BisaApp/tree/backend)
+- [Frontend](https://github.com/BisaMhealth/BisaApp/tree/frontend)
+- [Admin](https://github.com/BisaMhealth/BisaApp/tree/Admin)
+- [Mobile app](https://github.com/BisaMhealth/BisaApp/tree/mobile-app)
 
-### Web Application
+### All the web-based trees are written with PHP, Laravel and VueJs.
 
-To run the Bisa Health web application, follow these steps:
+# Requirements
+- Apache Server
+- PHP 8.0 or above
+- Laravel 8.0
+- MySQL 8.0  
+or  
+- MariaDB 10.4.22
 
-1. Clone the repository to your local machine
-2. Navigate to the `web` directory
-3. Run `composer install` to install the application's dependencies
-4. Create a new MySQL database for the application
-5. Copy the `.env.example` file to `.env` and set your database credentials
-6. Run `php artisan migrate` to create the database tables
-7. Run `npm install` to install the application's front-end dependencies
-8. Run `npm run dev` to build the application's front-end assets
-9. Run `php artisan serve` to start the application on a local web server
 
-## Usage
+## Easy Installation
 
-To use the Bisa Health mobile app, simply open the app and search for healthcare providers near you. You can then book appointments and chat with providers to receive medical advice and treatment.
+## Server Setup 
+<hr /> <br />
 
-To use the Bisa Health web application, open the application in your web browser and create an account. Once you have an account, you can search for healthcare providers and book appointments. You can also chat with healthcare providers and track your health progress using the application's dashboard.
 
-## Contributing
+#### Install XAMPP/WAMP Server
+- Download XAMPP from here [XAMPP Download link](https://www.apachefriends.org/download.html)  or
+- Download WampServer from here [WAMP Download](https://www.wampserver.com/en/download-wampserver-64bits/)
 
-If you would like to contribute to the Bisa Health application, please follow these steps:
 
-1. Fork the repository to your GitHub account
-2. Create a new branch for your changes
-3. Make your changes to the code
-4. Write tests for your changes
-5. Submit a pull request to the main repository
+## Windows Server Setup For Local Deployment
+<hr /> <br />
 
-## License
+Use XAMPP or WAMP, if use XAMPP (PHP development environment) for installing php and Mysql or MariaDB server in windows local machine, for this case download xampp version 8.0 or above.
 
-The Bisa Health application is licensed under the MIT license. See the [LICENSE](./LICENSE) file for more information.
+Once xampp is installed, update configure apache server if needed, in this case go to C:\xampp\php\php.ini and extend limit max_execution_time = 10000 , max_input_time = 10000, memory_limit = 2048M, post_max_size = 2048M, upload_max_filesize = 2048M .
+
+
+### Composer Installation
+Once XAMPP installed successfully, need to install composer if not installed on machine. To install composer please follow following steps. [Download link](https://getcomposer.org/download/)
+
+Download and run Composer-Setup.exe - it will install the latest composer version whenever it is executed.
+Once downloaded composer.exe, install this file and use command line path (C:\xampp\php\php.exe)
+
+Now open the xampp server then run Apache and MySQL service.
+
+Project folder path should be C:\xampp\htdocs 
+
+To check composer version run this command in your CLI or command prompt
+
+```shell
+composer -v
+```
+
+### Node Installation and NPM
+Install node from this [link](https://nodejs.org/en/download/current)
+Run .exe file to install Node on your PC
+
+Check your node version in your CLI with;
+```shell
+    node -v
+```
+
+## Install Project using Git for all web
+
+```shell
+    git clone https://github.com/BisaMhealth/BisaApp.git
+    cp .env.example .env
+    composer install
+    php artisan storage:link
+    php artisan key:generate
+```
+
+## Frontend dependencies for all web
+```shell
+    npm install
+```
+
+
+## Database setup
+### Create a database for the project in localhost/phpmyadmin for local hosting and on your hosting if this is live.
+### Configure database connection within the .env file.
+
+```shell
+    php artisan migrate
+    php artisan db:seed
+```
+### Navigate to the various projects, repeat installation process for all web above
+
+
+### Running the project
+```shell
+    php artisan serve
+```
+
+```shell
+    npm run dev
+```
+
+### Check the VueJs documentation for how to run Laravel with VueJs
+
+### Site URL Shoud Be Like
+- http://localhost:"port number" 
+
+
+
+### License
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
