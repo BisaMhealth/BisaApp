@@ -46,49 +46,31 @@ class _WaterHomeState extends State<WaterHome> {
           vertical: 10
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(
-              // padding: EdgeInsets.symmetric(
-              //   horizontal: 10
-              // ),
-              decoration: BoxDecoration(),
-              child: Container(
-                height: 300,
-                width: MediaQuery.of(context).size.width*0.9,
-                //padding: EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.9),
-                  borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(40),
-                    bottomRight: Radius.circular(20),
-                    topRight: Radius.circular(20),
-                    topLeft: Radius.circular(20)
-                    )
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    SizedBox(),
-                    Container(
-                      height: 140,
-                      width: MediaQuery.of(context).size.width*0.9,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage(
-                            'assets/imgs/waves.png',
-                            ),
-                            fit: BoxFit.cover
-                          )
-                      ),
-                      child: Text(""),
-                    )
-                  ],
-                ),
-              ),
-            ),
             Container()
           ],
+        ),
+      ),
+      bottomNavigationBar: Container(
+        //color: const Color.fromARGB(255, 85, 192, 242),
+        decoration: BoxDecoration(
+          gradient: RadialGradient(
+            colors: [
+              Colors.lightBlue,
+              Colors.lightBlueAccent
+            ]
+            )
+        ),
+        child: Container(
+          height: 150,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/imgs/waves.png'),
+              fit: BoxFit.cover
+              )
+          ),
+          child: Text(""),
         ),
       ),
     );
