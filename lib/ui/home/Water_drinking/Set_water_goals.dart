@@ -101,25 +101,27 @@ List images = [
                     SizedBox(
                       height: 20,
                     ),
-                    Container(
-                      width: MediaQuery.of(context).size.width * 0.8,
-                      child: Form(
-                        key: _formkey,
-                        // child: CustomTextField(
-                        //   isEnabled: true,
-                        //   fieldController: _goalController, 
-                        //   fieldValidator: Validator.textValidator, 
-                        //   currentFocus: goalfocusNode, 
-                        //   fieldHintText: "Set your daily goal", 
-                        //   fieldTextInputAction: TextInputAction.done
-                        //   ),
-                        child: TextFormField(
-                          controller: _goalController,
-                          decoration: InputDecoration(
-                            
+                    Center(
+                      child: Container(
+                        width: MediaQuery.of(context).size.width * 0.8,
+                        child: Form(
+                          key: _formkey,
+                          // child: CustomTextField(
+                          //   isEnabled: true,
+                          //   fieldController: _goalController, 
+                          //   fieldValidator: Validator.textValidator, 
+                          //   currentFocus: goalfocusNode, 
+                          //   fieldHintText: "Set your daily goal", 
+                          //   fieldTextInputAction: TextInputAction.done
+                          //   ),
+                          child: TextFormField(
+                            controller: _goalController,
+                            decoration: InputDecoration(
+                              
+                            ),
+                          )
                           ),
-                        )
-                        ),
+                      ),
                     ),
                     SizedBox(
                       height: 40,

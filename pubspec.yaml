@@ -84,6 +84,8 @@ dependencies:
   audio_service: ^0.18.12
   audio_video_progress_bar: ^2.0.2
   flutter_local_notifications: ^17.0.0
+  flutter_timezone: ^1.0.8
+  rxdart: ^0.27.7
   # textfield_tags: ^3.0.0
   # flutter_inappwebview: ^5.7.2+3
 
