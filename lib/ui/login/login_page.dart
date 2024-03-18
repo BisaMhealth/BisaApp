@@ -141,6 +141,7 @@ class LoginPageState extends State<LoginPage> {
 
   void _loadSettings() {
     loadSettings().then((value) {
+      
       if (value != null) {
         if (value['status'] == 'success') {
           context.read<SettingsProvider>().setSettings(value['data']);
@@ -1116,6 +1117,7 @@ class ResetPasswordState extends State<ResetPassword> {
 
       resetPwd(dataMap).then((value) {
         if (kDebugMode) {
+          print("Here is the value:");
           print(value);
         }
         if (value != null) {

@@ -91,9 +91,25 @@ class SplashState extends State<Splash> with TickerProviderStateMixin {
                       builder: (context, child) {
                         return ScaleTransition(
                             scale: _animation,
-                            child: Image.asset(
-                              'assets/imgs/bisa_icon.png',
-                            ));
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Image.asset(
+                                  'assets/imgs/bisa_icon.png',
+                                ),
+                               const Text(
+                                "Healthcare at your\n fingertips",
+                                    style: TextStyle(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 17,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.black,
+                                        ),
+                                        textAlign: TextAlign.center,
+                                        ),
+                              ],
+                            )
+                            );
                       }));
             }),
       ),
@@ -146,7 +162,7 @@ class SplashState extends State<Splash> with TickerProviderStateMixin {
       await Future.delayed(const Duration(milliseconds: 3000), () {
         Navigator.pop(context);
         // Navigator.pushNamed(context, '/signin');
-        Navigator.pushNamed(context, '/onboarding');
+        Navigator.pushNamed(context, '/splash1');
       });
     }
   }

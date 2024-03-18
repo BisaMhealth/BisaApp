@@ -7,6 +7,7 @@ import 'package:bisa_app/ui/insurance/confirm_form.dart';
 import 'package:bisa_app/ui/login/login_page.dart';
 import 'package:bisa_app/ui/onboarding.dart';
 import 'package:bisa_app/ui/splash.dart';
+import 'package:bisa_app/ui/splashes/splash1.dart';
 // import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -114,6 +115,46 @@ class MyAppState extends State<MyApp> {
             scaffoldBackgroundColor: const Color.fromRGBO(255, 255, 255, 0.98),
             // primarySwatch: Colors.blue,
             primaryColor: const Color(0xFFB5E255),
+            datePickerTheme: DatePickerThemeData(
+              backgroundColor: Colors.white,
+              surfaceTintColor: Colors.transparent,
+              inputDecorationTheme: const InputDecorationTheme(
+                border: InputBorder.none,
+                contentPadding: EdgeInsets.zero,
+              ),
+              dayBackgroundColor: MaterialStateProperty.resolveWith(
+                (states) {
+                  if (states.contains(MaterialState.selected)) {
+                    return const Color(0xFFB5E255);
+                  }
+                  return Colors.transparent;
+                },
+              ),
+              // dayOverlayColor: MaterialStateColor.resolveWith(
+              //   (states) => const Color(0xFFB5E255),
+              // ),
+              dayOverlayColor: MaterialStateProperty.all(
+                const Color(0xFFB5E255),
+              ),
+              confirmButtonStyle: ButtonStyle(
+                textStyle: MaterialStateProperty.all(
+                  const TextStyle(
+                    color: Color(0xFFB5E255),
+                    fontSize: 16,
+                  ),
+                ),
+                padding: MaterialStateProperty.all(
+                  const EdgeInsets.symmetric(
+                    horizontal: 40,
+                    vertical: 10,
+                  ),
+                ),
+                backgroundColor: MaterialStateProperty.all(
+                  const Color(0xFFB5E255),
+                ),
+              ),
+            )
+            // colorSchemeSeed: Color.fromARGB(255, 199, 235, 122)
             // textTheme: MediaQuery.of(context).copyWith(textScaleFactor: 1.0)
           ),
           // builder: (context, widget) {
@@ -138,7 +179,8 @@ class MyAppState extends State<MyApp> {
                     SystemChrome.setSystemUIOverlayStyle(
                         SystemUiOverlayStyle.light.copyWith(
                             statusBarIconBrightness: Brightness.dark,
-                            statusBarColor: Colors.white));
+                            statusBarColor: Colors.white
+                            ));
                   }
                 },
                 blurValue: 1,
@@ -149,12 +191,14 @@ class MyAppState extends State<MyApp> {
                   builder: (context) {
                     return MediaQuery(
                         data: MediaQuery.of(context)
-                            .copyWith(textScaleFactor: 1.0),
+                            .copyWith(
+                              textScaleFactor: 1.0
+                              ),
                         child: widget!);
                   },
                 ));
           },
-          // home: Splash(),
+           //home: Splash1(),
           initialRoute: '/splash',
           routes: {
             '/onboarding': (context) => const OnBoarding(),
@@ -162,7 +206,8 @@ class MyAppState extends State<MyApp> {
             '/chat': (context) => const ChatListScreen(),
             '/login': (context) => const LoginPage(),
             '/splash': (context) => const Splash(),
-            '/home': (context) => const HomePage()
+            '/home': (context) => const HomePage(),
+            '/splash1': (context) => const Splash1(),
           },
         );
       },
