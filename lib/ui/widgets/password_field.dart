@@ -54,7 +54,7 @@ class CustomPasswordFieldState extends State<CustomPasswordField> {
     return Platform.isIOS
         ? CupertinoTextField.borderless(
             padding: EdgeInsets.all(12.h),
-            enabled: widget.isEnabled!,
+            enabled: widget.isEnabled==null?true:widget.isEnabled!,
             focusNode: widget.currentFocus,
             controller: widget.fieldController,
             textInputAction: widget.fieldTextInputAction,
