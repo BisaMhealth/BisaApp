@@ -79,11 +79,24 @@ class _WaterGoalsState extends State<WaterGoals> {
                           fontWeight: FontWeight.bold
                           )
                         ),
-                    )
+                    ),
                   ],
                 ),
               ),
             ],
+          ),
+        ),
+      ),
+      floatingActionButton: InkWell(
+        onTap: (){},
+        child: Container(
+          height: 170,
+          width: 170,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/imgs/waterdrop.png'),
+              fit: BoxFit.cover
+              )
           ),
         ),
       ),

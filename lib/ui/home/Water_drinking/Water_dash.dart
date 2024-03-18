@@ -127,14 +127,19 @@ class _WaterDashState extends State<WaterDash> {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      floatingActionButton: Container(
-        height: 200,
-        width: 200,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/imgs/waterdrop.png'),
-            fit: BoxFit.cover
-            )
+      floatingActionButton: InkWell(
+        onTap: (){
+          PageAnimateNoRep(context, PageTransitionType.fade, WaterGoals());
+        },
+        child: Container(
+          height: 200,
+          width: 200,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/imgs/waterdrop.png'),
+              fit: BoxFit.cover
+              )
+          ),
         ),
       ),
       );
