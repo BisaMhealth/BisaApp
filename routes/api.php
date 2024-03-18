@@ -315,7 +315,6 @@ Route::middleware(['cors'])->group(function () {
             Route::post('hospital', 'Api\UserManagementController@RegisterHospital');
         });
 
-
         Route::post('/marketer/auth/login', 'Api\DashboardController@marketlogin');
         Route::post('/admin/publish-admin-article', 'Api\GeneralController@publishAdminArticle');
         Route::post('/admin/publish-admin-article/{id}', 'Api\GeneralController@updateArticle');
