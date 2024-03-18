@@ -4,6 +4,7 @@ import 'package:bisa_app/models/current_user.dart';
 import 'package:bisa_app/providers/current_user_provider.dart';
 import 'package:bisa_app/services/api_service.dart';
 import 'package:bisa_app/ui/chat/start_question.dart';
+import 'package:bisa_app/ui/home/Fitness/Fitness_home.dart';
 import 'package:bisa_app/ui/home/Meditation/Meditation_home.dart';
 import 'package:bisa_app/ui/home/Water_drinking/Water_home.dart';
 import 'package:bisa_app/ui/home/covid_page/main.dart';
@@ -186,7 +187,7 @@ class HomeState extends State<Home> with SingleTickerProviderStateMixin {
                               SizedBox(
                                 width: 8.w,
                               ),
-                              //meditate
+                              //Fitness
                               InkWell(
                                 onTap: () {
                                   Navigator.push(
@@ -194,7 +195,7 @@ class HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                     PageAnimationTransition(
                                       pageAnimationType:
                                           FadeAnimationTransition(),
-                                      page: const MeditationHome(),
+                                      page: const FitnessHome(),
                                     ),
                                   );
                                 },
@@ -209,13 +210,13 @@ class HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Image.asset('assets/imgs/med2.png',
+                                      Image.asset('assets/imgs/exercise.png',
                                           height: 55.h, fit: BoxFit.cover),
                                       SizedBox(
                                         height: 10.h,
                                       ),
                                       Text(
-                                        ' Meditation',
+                                        ' Fitness',
                                         style: TextStyle(
                                           fontFamily: 'Poppins',
                                           fontWeight: FontWeight.w600,

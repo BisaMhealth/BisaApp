@@ -1,5 +1,8 @@
 
+import 'package:bisa_app/animation/PageTransition.dart';
+import 'package:bisa_app/ui/home/Water_drinking/Water_dash.dart';
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 
 class WaterHome extends StatefulWidget {
   const WaterHome({super.key});
@@ -12,12 +15,12 @@ class _WaterHomeState extends State<WaterHome> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration:const BoxDecoration(
         gradient: RadialGradient(
           colors: [
             Colors.lightBlueAccent,
             Colors.lightBlueAccent,
-            Colors.white,
+             Color.fromARGB(255, 230, 249, 249)
             
           ]
           )
@@ -68,7 +71,8 @@ class _WaterHomeState extends State<WaterHome> {
                 Container(
                 child:  Row(
                   mainAxisAlignment: MainAxisAlignment.start,
-                    children: [GestureDetector(
+                    children: [
+                      GestureDetector(
             onTap: (){
               Navigator.pop(context);
             },
@@ -83,7 +87,8 @@ class _WaterHomeState extends State<WaterHome> {
                             color: Colors.lightBlueAccent,
                           ),
                         ),
-          ),],
+          ),
+          ],
                   )
                 ),
                 SizedBox(
@@ -113,7 +118,9 @@ class _WaterHomeState extends State<WaterHome> {
                       vertical: 200
                     ),
                     child: TextButton(
-                      onPressed: (){}, 
+                      onPressed: (){
+                        PagetransAnimate(context, PageTransitionType.fade, WaterDash());
+                      }, 
                       child: Text(
                         "Let\'s get Hydrated",
                         style: TextStyle(
@@ -130,10 +137,20 @@ class _WaterHomeState extends State<WaterHome> {
         bottomNavigationBar: Container(
           //color: const Color.fromARGB(255, 85, 192, 242),
           decoration: BoxDecoration(
-            gradient: RadialGradient(
+            borderRadius: BorderRadius.only(
+              topRight: Radius.circular(20)
+            ),
+            gradient: LinearGradient(
               colors: [
                 Colors.lightBlue,
-                Colors.lightBlueAccent
+                 Colors.lightBlue,
+                  Colors.lightBlue,
+                Colors.lightBlueAccent,
+                Colors.lightBlueAccent,
+                Colors.lightBlueAccent,
+                Colors.lightBlueAccent,
+                Color.fromARGB(255, 230, 249, 249)
+                //Colors.white
               ]
               )
           ),
